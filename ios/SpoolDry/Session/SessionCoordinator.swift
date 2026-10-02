@@ -92,7 +92,8 @@ final class SessionCoordinator {
     func start(plan: DryingPlan, on link: DeviceLink) async throws {
         guard link.isReady else { throw StartError.notReady }
         if case .paywall = decision(for: link) { throw StartError.paywallRequired }
-        if notificationsEnabled { await notifications.requestAuthorizationIfNeeded() }
+        // Ask for notification permission without blocking the start command on the system alert.
+        if notificationsEnabled { Task { await notifications.requestAuthorizationIfNeeded() } }
 
         // The session only exists once the dryer acknowledges it.
         let response = try await link.send(plan.command)

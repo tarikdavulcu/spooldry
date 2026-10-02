@@ -8,8 +8,17 @@ import XCTest
 /// non-demo dryer so the free-tier rules apply.
 @MainActor
 final class AppLogicTests: XCTestCase {
+    private var retainedContainers: [ModelContainer] = []
+
+    override func setUp() async throws {
+        // No system permission alerts or Live Activities inside the test host.
+        UserDefaults.standard.set(false, forKey: SettingsKeys.notifications)
+        UserDefaults.standard.set(false, forKey: SettingsKeys.liveActivities)
+    }
+
     private func makeCoordinator(used: Int = 0) -> (SessionCoordinator, InMemoryUsageCounterStore, ModelContainer) {
         let container = PersistenceController.makeContainer(inMemory: true)
+        retainedContainers.append(container)  // a ModelContext must not outlive its container
         let usage = InMemoryUsageCounterStore(used)
         let coordinator = SessionCoordinator(context: container.mainContext, store: StoreManager(), usageStore: usage)
         return (coordinator, usage, container)

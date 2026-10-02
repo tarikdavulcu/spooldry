@@ -367,7 +367,7 @@ SCHEME = """<?xml version="1.0" encoding="UTF-8"?>
    </BuildAction>
    <TestAction buildConfiguration = "Debug" selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB" selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB" shouldUseLaunchSchemeArgsEnv = "YES" shouldAutocreateTestPlan = "YES">
       <Testables>
-         <TestableReference skipped = "NO" parallelizable = "YES">
+         <TestableReference skipped = "NO" parallelizable = "NO">
             <BuildableReference BuildableIdentifier = "primary" BlueprintIdentifier = "{tests}" BuildableName = "SpoolDryTests.xctest" BlueprintName = "SpoolDryTests" ReferencedContainer = "container:SpoolDry.xcodeproj">
             </BuildableReference>
          </TestableReference>

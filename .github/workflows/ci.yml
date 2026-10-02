@@ -20,6 +20,7 @@ jobs:
         with: { name: spooldry-firmware, path: esp32/.pio/build/esp32-c6-devkitc-1/*.bin }
   ios:
     runs-on: macos-15
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: maxim-lobanov/setup-xcode@v1
@@ -30,7 +31,10 @@ jobs:
           cd ios
           SIM=$(xcrun simctl list devices available | grep -m1 -oE 'iPhone [^(]+\(([0-9A-F-]{36})\)' | grep -oE '[0-9A-F-]{36}')
           echo "Simulator: $SIM"
-          xcodebuild -project SpoolDry.xcodeproj -scheme SpoolDry -destination "id=$SIM" CODE_SIGNING_ALLOWED=NO test
+          xcrun simctl boot "$SIM" || true
+          xcrun simctl bootstatus "$SIM" -b
+          xcodebuild -project SpoolDry.xcodeproj -scheme SpoolDry -destination "id=$SIM" CODE_SIGNING_ALLOWED=NO \
+            -parallel-testing-enabled NO -test-timeouts-enabled YES -default-test-execution-time-allowance 120 test
   l10n-aso-site:
     runs-on: ubuntu-latest
     steps:
