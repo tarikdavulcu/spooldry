@@ -1,0 +1,1 @@
+3d printing,humidity,esp32,bluetooth,nylon,petg,pla,abs,asa,tpu,dry box,hygrometer,spool,moisture

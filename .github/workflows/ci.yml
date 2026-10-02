@@ -1,0 +1,40 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  firmware-host-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/gen_protocol.py --check
+      - run: make -C esp32/test/host test
+      - run: esp32/test/compile_check/run.sh
+  firmware-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -U platformio
+      - run: cd esp32 && pio run
+      - uses: actions/upload-artifact@v4
+        with: { name: spooldry-firmware, path: esp32/.pio/build/esp32-c6-devkitc-1/*.bin }
+  ios:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: maxim-lobanov/setup-xcode@v1
+        with: { xcode-version: latest-stable }
+      - run: cd ios/Packages/SpoolDryKit && swift test
+      - name: Build and test app
+        run: |
+          cd ios
+          SIM=$(xcrun simctl list devices available | grep -m1 -oE 'iPhone [^(]+\(([0-9A-F-]{36})\)' | grep -oE '[0-9A-F-]{36}')
+          echo "Simulator: $SIM"
+          xcodebuild -project SpoolDry.xcodeproj -scheme SpoolDry -destination "id=$SIM" CODE_SIGNING_ALLOWED=NO test
+  l10n-aso-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/l10n/build_catalogs.py --check
+      - run: python3 tools/aso_data.py
+      - run: python3 website/src/build.py

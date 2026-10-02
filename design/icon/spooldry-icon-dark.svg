@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- SpoolDry app icon: filament spool + moisture droplet + thermometer. Original artwork. -->
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="22%" r="95%">
+      <stop offset="0" stop-color="#14525A"/>
+      <stop offset="0.55" stop-color="#0B2A33"/>
+      <stop offset="1" stop-color="#060D12"/>
+    </radialGradient>
+    <linearGradient id="filament" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC15E"/>
+      <stop offset="0.55" stop-color="#FF8A2A"/>
+      <stop offset="1" stop-color="#E5531A"/>
+    </linearGradient>
+    <linearGradient id="flange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2B3E49"/>
+      <stop offset="1" stop-color="#142029"/>
+    </linearGradient>
+    <linearGradient id="drop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6FF3E4"/>
+      <stop offset="1" stop-color="#16B8C8"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <mask id="windingsMask">
+      <rect width="1024" height="1024" fill="black"/>
+      <circle cx="512" cy="530" r="318" fill="white"/>
+      <circle cx="512" cy="530" r="178" fill="black"/>
+    </mask>
+  </defs>
+
+  
+  <!-- subtle glow -->
+  
+
+  <g filter="url(#soft)">
+    <!-- spool flange -->
+    <circle cx="512" cy="530" r="372" fill="url(#flange)"/>
+    <circle cx="512" cy="530" r="372" fill="none" stroke="#3E5866" stroke-width="10"/>
+    <!-- flange cut-outs (spokes) -->
+    <g fill="#0C161D" opacity="0.9">
+      <circle cx="512" cy="196" r="20"/>
+      <circle cx="512" cy="864" r="20"/>
+      <circle cx="178" cy="530" r="20"/>
+      <circle cx="846" cy="530" r="20"/>
+    </g>
+    <!-- filament windings -->
+    <g mask="url(#windingsMask)">
+      <circle cx="512" cy="530" r="318" fill="url(#filament)"/>
+      <g fill="none" stroke="#7A2E0B" stroke-opacity="0.28" stroke-width="5">
+        <circle cx="512" cy="530" r="296"/>
+        <circle cx="512" cy="530" r="272"/>
+        <circle cx="512" cy="530" r="248"/>
+        <circle cx="512" cy="530" r="224"/>
+        <circle cx="512" cy="530" r="200"/>
+      </g>
+      <path d="M 300 330 A 300 300 0 0 1 560 232" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="14" stroke-linecap="round"/>
+    </g>
+    <!-- hub -->
+    <circle cx="512" cy="530" r="172" fill="#0A141A"/>
+    <circle cx="512" cy="530" r="172" fill="none" stroke="#2C4350" stroke-width="8"/>
+  </g>
+
+  <!-- droplet with thermometer -->
+  <g transform="translate(512 538)">
+    <path d="M 0 -150 C 52 -82 112 -18 112 46 C 112 112 62 158 0 158 C -62 158 -112 112 -112 46 C -112 -18 -52 -82 0 -150 Z"
+          fill="url(#drop)"/>
+    <path d="M -64 18 C -66 -14 -46 -50 -22 -78" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="14" stroke-linecap="round"/>
+    <!-- thermometer (negative space) -->
+    <g fill="#0A141A">
+      <rect x="-17" y="-62" width="34" height="132" rx="17"/>
+      <circle cx="0" cy="88" r="36"/>
+    </g>
+    <g fill="#FF8A2A">
+      <rect x="-7" y="-20" width="14" height="100" rx="7"/>
+      <circle cx="0" cy="88" r="24"/>
+    </g>
+  </g>
+
+  <!-- heat waves -->
+  <g fill="none" stroke="#FFB15A" stroke-width="18" stroke-linecap="round" opacity="0.95">
+    <path d="M 742 168 c -26 30 26 52 0 82 c -26 30 26 52 0 82"/>
+    <path d="M 812 132 c -26 30 26 52 0 82 c -26 30 26 52 0 82"/>
+  </g>
+</svg>

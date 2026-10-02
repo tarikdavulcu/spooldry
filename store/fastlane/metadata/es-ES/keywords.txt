@@ -1,0 +1,1 @@
+impresión 3d,humedad,esp32,bluetooth,nailon,petg,pla,abs,caja seca,higrómetro,bobina,secado

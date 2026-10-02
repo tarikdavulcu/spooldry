@@ -1,0 +1,12 @@
+# fastlane deliver configuration for SpoolDry
+# Usage (after creating the app record and signing in):  cd store/fastlane && fastlane deliver
+app_identifier "com.tarikdavulcu.spooldry"
+metadata_path "./metadata"
+screenshots_path "./screenshots"
+price_tier nil            # price is set on the in-app purchase, the app itself is free
+submit_for_review false
+automatic_release false
+force true
+skip_binary_upload true
+precheck_include_in_app_purchases false
+languages ["en-US", "de-DE", "fr-FR", "es-ES", "ar-SA", "ja"]

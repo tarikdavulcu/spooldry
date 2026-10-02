@@ -1,0 +1,27 @@
+SpoolDry macht deinen ESP32-Filamenttrockner zur vernetzten Trocknungsstation. Dein iPhone spricht direkt per Bluetooth Low Energy mit dem Trockner: kein Konto, keine Cloud, kein Internet nötig.
+
+WISSEN, WANN DEIN FILAMENT TROCKEN IST
+Feuchtes Filament zieht Fäden, knackt, schäumt und ergibt schwache Bauteile. SpoolDry zeigt Kammertemperatur und relative Feuchte live, damit du siehst, wie die Feuchtigkeit die Spule verlässt, statt zu raten.
+
+FÜR TECHNISCHE KUNSTSTOFFE GEMACHT
+Starte mit typischen Trocknungswerten für PLA, PETG, ABS, ASA, TPU, PA (Nylon), PC, PVA, BVOH, PEEK, PEI/ULTEM, PPS sowie kohle- und glasfasergefüllte Typen. Jeder Wert ist als typischer Startwert gekennzeichnet und verlinkt die Herstellerseiten, aus denen er zusammengefasst wurde. Lege eigene Profile für deine Marken an.
+
+LIVE-AKTIVITÄT & DYNAMIC ISLAND
+Verfolge Vorheizen, Trocknen und Abkühlen auf dem Sperrbildschirm. Der Timer läuft erst, wenn der Trockner das Erreichen der Zieltemperatur meldet: kein geschönter Fortschritt.
+
+SICHERHEIT BLEIBT IM TROCKNER
+Die ESP32-Firmware führt die Trocknung selbstständig aus und überwacht Temperaturgrenzen, Sensoren, Lüfter und einen Watchdog. Verlässt dein iPhone den Raum, läuft die Trocknung sicher weiter und SpoolDry holt später auf.
+
+VERLAUF & STATISTIKEN
+Jede Trocknung wird auf deinem iPhone gespeichert, mit Start- und Endfeuchte, Durchschnittstemperatur und Diagramm. Sieh Trocknungsstunden, durchschnittliche Feuchte-Reduktion und dein meistgenutztes Material.
+
+MEHRERE TROCKNER
+Benenne deine Trockner (SpoolDry #1, #2 …) und wechsle zwischen ihnen.
+
+OFFENE HARDWARE
+Firmware, BLE-Protokoll, Schaltplan und Stückliste findest du auf der SpoolDry-Website. Die Hardware ist ein DIY-Projekt und nicht zertifiziert; beachte die Sicherheitshinweise.
+
+PREIS
+Deine ersten 3 Trocknungen sind kostenlos. SpoolDry Lifetime ist ein Einmalkauf für unbegrenzte Trocknungen und mehrere Trockner. Kein Abo.
+
+Noch keine Hardware gebaut? Probiere den integrierten Demo-Trockner.

@@ -1,0 +1,7 @@
+Première version de SpoolDry :
+• Contrôle Bluetooth direct de votre sécheur de filament ESP32
+• Température et humidité en direct
+• Minuteur en activité en direct et Dynamic Island
+• Widgets pour l'écran d'accueil
+• Repères de séchage pour PLA, PETG, ABS, ASA, TPU, PA, PC, PVA, BVOH, PEEK, PEI, PPS et grades chargés en fibres
+• Historique et statistiques hors ligne

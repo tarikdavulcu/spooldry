@@ -1,0 +1,7 @@
+First release of SpoolDry:
+• Direct Bluetooth control of your ESP32 filament dryer
+• Live temperature and humidity
+• Live Activity and Dynamic Island drying timer
+• Widgets for your Home Screen
+• Typical drying guidance for PLA, PETG, ABS, ASA, TPU, PA, PC, PVA, BVOH, PEEK, PEI, PPS and fiber-filled grades
+• Offline history and statistics

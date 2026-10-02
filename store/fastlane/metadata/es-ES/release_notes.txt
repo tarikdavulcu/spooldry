@@ -1,0 +1,7 @@
+Primera versión de SpoolDry:
+• Control directo por Bluetooth de tu secador de filamento ESP32
+• Temperatura y humedad en vivo
+• Temporizador en Actividad en vivo y Dynamic Island
+• Widgets para la pantalla de inicio
+• Pautas de secado para PLA, PETG, ABS, ASA, TPU, PA, PC, PVA, BVOH, PEEK, PEI, PPS y grados con fibra
+• Historial y estadísticas sin conexión

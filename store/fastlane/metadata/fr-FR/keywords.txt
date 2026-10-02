@@ -1,0 +1,1 @@
+impression 3d,humidité,esp32,bluetooth,nylon,petg,pla,abs,boîte sèche,hygromètre,bobine,séchage

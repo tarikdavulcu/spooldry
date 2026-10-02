@@ -1,0 +1,12 @@
+.DS_Store
+xcuserdata/
+DerivedData/
+build/
+.build/
+.swiftpm/
+esp32/.pio/
+esp32/test/host/spooldry_tests
+esp32/test/host/golden_vectors
+website/dist/
+design/screenshots-html/
+__pycache__/

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" font-family="Inter, Arial, sans-serif" font-size="14" role="img" aria-labelledby="t d">
+  <title id="t">SpoolDry wiring diagram</title>
+  <desc id="d">24 V DC power from a certified Mean Well GST220A24 adapter passes a 7.5 A fuse. The PTC heater current flows through a 100 °C thermal cutoff, the relay K1 contact, the heater and MOSFET Q1 to ground. The relay coil is powered through an 85 °C thermostat and switched by MOSFET Q3. The fan is switched by MOSFET Q2. A Pololu 5 V regulator powers the ESP32-C6. The SHT40 connects over I2C on GPIO23/22, the heater NTC to GPIO2, fan tach to GPIO20.</desc>
+  <defs>
+    <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"><circle cx="5" cy="5" r="4" fill="#9fb3bd"/></marker>
+    <style>
+      .box{fill:#121a20;stroke:#3a4c57;stroke-width:2;rx:10}
+      .t{fill:#e8eef2;font-weight:600}
+      .s{fill:#9fb3bd;font-size:12px}
+      .p24{stroke:#ff9933;stroke-width:3;fill:none}
+      .gnd{stroke:#7d8b93;stroke-width:3;fill:none}
+      .sig{stroke:#2ec4b6;stroke-width:2;fill:none}
+      .i2c{stroke:#4fa8f2;stroke-width:2;fill:none}
+      .v5{stroke:#e5c34a;stroke-width:2.5;fill:none}
+      .safe{fill:#2a1416;stroke:#f24d45;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1200" height="860" fill="#0b1014"/>
+
+  <!-- MAINS zone -->
+  <rect x="20" y="20" width="230" height="200" fill="none" stroke="#f24d45" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="32" y="44" fill="#f24d45" font-weight="700">MAINS (100–240 V AC)</text>
+  <text x="32" y="64" class="s">Only inside the certified, enclosed</text>
+  <text x="32" y="80" class="s">Mean Well adapter. Never opened.</text>
+  <rect x="40" y="100" width="190" height="96" class="box"/>
+  <text x="54" y="126" class="t">Mean Well GST220A24</text>
+  <text x="54" y="146" class="s">24 V DC · 9.2 A · 221 W</text>
+  <text x="54" y="164" class="s">IEC C14 inlet · 4-pin DIN out</text>
+  <text x="54" y="182" class="s">(Kycon KPJX-PM-4S panel jack)</text>
+
+  <text x="270" y="44" fill="#33c778" font-weight="700">LOW VOLTAGE ZONE (24 V DC / 5 V / 3.3 V)</text>
+
+  <!-- fuse -->
+  <rect x="290" y="110" width="120" height="56" class="box"/>
+  <text x="304" y="134" class="t">F1 fuse</text><text x="304" y="152" class="s">ATO 7.5 A</text>
+  <path class="p24" d="M230 130 H290"/><text x="236" y="122" class="s">+24 V</text>
+  <path class="gnd" d="M230 180 H262 V800 H1160"/><text x="236" y="198" class="s">GND</text>
+
+  <!-- 24 V bus -->
+  <path class="p24" d="M410 138 H1100"/>
+  <text x="430" y="128" fill="#ff9933" font-size="12">+24 V bus</text>
+
+  <!-- heater chain -->
+  <rect x="440" y="200" width="150" height="60" class="safe"/>
+  <text x="452" y="224" class="t">TCO 100 °C</text><text x="452" y="243" class="s">Cantherm SDF-DF100S</text>
+  <rect x="440" y="290" width="150" height="60" class="box"/>
+  <text x="452" y="314" class="t">K1 contact</text><text x="452" y="333" class="s">Omron G5LE-1A4 DC24</text>
+  <rect x="440" y="380" width="150" height="70" class="box" style="stroke:#ff9933"/>
+  <text x="452" y="406" class="t">PTC heater</text><text x="452" y="425" class="s">24 V · 100 W · insulated</text><text x="452" y="441" class="s">self-limiting</text>
+  <rect x="440" y="480" width="150" height="70" class="box"/>
+  <text x="452" y="506" class="t">Q1 IRLB8721</text><text x="452" y="525" class="s">heater PWM 1 kHz</text><text x="452" y="541" class="s">100 Ω gate · 10 kΩ ↓</text>
+  <path class="p24" d="M515 138 V200 M515 260 V290 M515 350 V380 M515 450 V480"/>
+  <path class="gnd" d="M515 550 V800"/>
+
+  <!-- relay coil -->
+  <rect x="640" y="200" width="160" height="60" class="safe"/>
+  <text x="652" y="224" class="t">TS1 85 °C NC</text><text x="652" y="243" class="s">Cantherm F20A08505…</text>
+  <rect x="640" y="290" width="160" height="60" class="box"/>
+  <text x="652" y="314" class="t">K1 coil + D1</text><text x="652" y="333" class="s">1N4001 flyback</text>
+  <rect x="640" y="380" width="160" height="70" class="box"/>
+  <text x="652" y="406" class="t">Q3 IRLB8721</text><text x="652" y="425" class="s">relay enable</text><text x="652" y="441" class="s">100 Ω · 10 kΩ ↓</text>
+  <path class="p24" d="M720 138 V200 M720 260 V290 M720 350 V380"/>
+  <path class="gnd" d="M720 450 V800"/>
+  <path d="M590 320 H640" stroke="#9fb3bd" stroke-dasharray="4 4"/>
+
+  <!-- fan -->
+  <rect x="850" y="200" width="170" height="70" class="box"/>
+  <text x="862" y="224" class="t">Fan San Ace 80</text><text x="862" y="243" class="s">9GA0824P4G001 · 24 V</text><text x="862" y="259" class="s">tach out · PWM wire open</text>
+  <rect x="850" y="300" width="170" height="60" class="box"/>
+  <text x="862" y="324" class="t">Q2 IRLB8721</text><text x="862" y="343" class="s">fan on/off + D2 1N4001</text>
+  <path class="p24" d="M935 138 V200"/><path class="gnd" d="M935 270 V300 M935 360 V800"/>
+
+  <!-- buck -->
+  <rect x="1060" y="200" width="120" height="70" class="box"/>
+  <text x="1070" y="224" class="t">Pololu</text><text x="1070" y="242" class="s">D24V10F5</text><text x="1070" y="258" class="s">24 V → 5 V 1 A</text>
+  <path class="p24" d="M1100 138 V200"/><path class="gnd" d="M1160 270 V800"/>
+  <path class="v5" d="M1120 270 V610 H1050"/><text x="1126" y="600" fill="#e5c34a" font-size="12">5 V</text>
+
+  <!-- ESP32 -->
+  <rect x="640" y="560" width="410" height="200" class="box" style="stroke:#2ec4b6"/>
+  <text x="655" y="586" class="t">ESP32-C6-DevKitC-1-N8</text>
+  <text x="655" y="606" class="s">BLE 5 · 8 MB flash · USB-C · 3.3 V logic</text>
+  <text x="655" y="632" class="s">GPIO18 → Q1 gate (heater PWM)</text>
+  <text x="655" y="650" class="s">GPIO21 → Q3 gate (safety relay)</text>
+  <text x="655" y="668" class="s">GPIO19 → Q2 gate (fan)</text>
+  <text x="655" y="686" class="s">GPIO20 ← fan tach (10 kΩ to 3V3)</text>
+  <text x="655" y="704" class="s">GPIO2  ← NTC divider (47 kΩ to 3V3)</text>
+  <text x="655" y="722" class="s">GPIO23 SDA / GPIO22 SCL → SHT40</text>
+  <text x="655" y="740" class="s">GPIO8 RGB LED · GPIO9 BOOT = Stop</text>
+  <path class="sig" d="M640 632 H610 V515 H590"/>
+  <path class="sig" d="M800 650 H830 V415 H800"/>
+  <path class="sig" d="M1050 668 H1040 V330 H1020"/>
+  <path class="sig" d="M1050 686 H1060 V250 H1020" stroke-dasharray="5 4"/>
+
+  <!-- sensors -->
+  <rect x="290" y="600" width="170" height="64" class="box" style="stroke:#4fa8f2"/>
+  <text x="302" y="624" class="t">SHT40 (chamber)</text><text x="302" y="644" class="s">Adafruit 4885 · STEMMA QT</text>
+  <path class="i2c" d="M460 632 H640"/><text x="500" y="624" fill="#4fa8f2" font-size="12">I²C 3.3 V</text>
+  <rect x="290" y="690" width="170" height="64" class="box" style="stroke:#4fa8f2"/>
+  <text x="302" y="714" class="t">NTC 100k (outlet)</text><text x="302" y="734" class="s">Semitec 104GT-2</text>
+  <path class="i2c" d="M460 722 H600 V704 H640"/>
+
+  <text x="20" y="840" class="s">Heater current path: +24 V → F1 → TCO 100 °C → K1 → PTC → Q1 → GND. Either K1 (coil via 85 °C thermostat) or Q1 can interrupt it; the TCO is a final one-shot barrier.</text>
+</svg>

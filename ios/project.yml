@@ -1,0 +1,80 @@
+# XcodeGen spec for SpoolDry (https://github.com/yonaskolb/XcodeGen)
+# The repository also ships a ready-made SpoolDry.xcodeproj. Regenerate it with:  xcodegen generate
+name: SpoolDry
+options:
+  bundleIdPrefix: com.tarikdavulcu
+  deploymentTarget:
+    iOS: "17.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+  xcodeVersion: "26.0"
+settings:
+  base:
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+    DEVELOPMENT_TEAM: ""   # set your Apple Developer Team ID (the only manual value)
+    CODE_SIGN_STYLE: Automatic
+packages:
+  SpoolDryKit:
+    path: Packages/SpoolDryKit
+targets:
+  SpoolDry:
+    type: application
+    platform: iOS
+    sources:
+      - path: SpoolDry
+      - path: Shared
+    dependencies:
+      - package: SpoolDryKit
+      - target: SpoolDryWidgets
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tarikdavulcu.spooldry
+        PRODUCT_NAME: SpoolDry
+        INFOPLIST_FILE: SpoolDry/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: SpoolDry/Resources/SpoolDry.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_PREVIEWS: YES
+    scheme:
+      testTargets:
+        - SpoolDryTests
+      storeKitConfiguration: SpoolDry/Resources/SpoolDry.storekit
+  SpoolDryWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: SpoolDryWidgets
+      - path: Shared
+    dependencies:
+      - package: SpoolDryKit
+      - sdk: WidgetKit.framework
+      - sdk: SwiftUI.framework
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tarikdavulcu.spooldry.widgets
+        PRODUCT_NAME: SpoolDryWidgets
+        INFOPLIST_FILE: SpoolDryWidgets/Info.plist
+        CODE_SIGN_ENTITLEMENTS: SpoolDryWidgets/SpoolDryWidgets.entitlements
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SKIP_INSTALL: YES
+  SpoolDryTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: SpoolDryTests
+    dependencies:
+      - target: SpoolDry
+      - package: SpoolDryKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tarikdavulcu.spooldry.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/SpoolDry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpoolDry"
+        BUNDLE_LOADER: "$(TEST_HOST)"

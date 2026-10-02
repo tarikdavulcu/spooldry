@@ -1,0 +1,27 @@
+SpoolDry convierte tu secador de filamento ESP32 en una estación de secado conectada. Tu iPhone habla directamente con el secador por Bluetooth Low Energy: sin cuenta, sin nube y sin internet.
+
+SABE CUÁNDO TU FILAMENTO ESTÁ SECO
+El filamento húmedo hace hilos, chasquidos, espuma y piezas débiles. SpoolDry muestra en vivo la temperatura de la cámara y la humedad relativa, para que veas cómo sale la humedad en lugar de adivinar.
+
+PENSADO PARA POLÍMEROS TÉCNICOS
+Parte de pautas de secado típicas para PLA, PETG, ABS, ASA, TPU, PA (nailon), PC, PVA, BVOH, PEEK, PEI/ULTEM, PPS y grados con fibra de carbono o vidrio. Cada valor se marca como pauta inicial típica, con enlaces a las páginas de los fabricantes resumidas. Crea perfiles propios para tus marcas.
+
+ACTIVIDAD EN VIVO Y DYNAMIC ISLAND
+Sigue el precalentamiento, el secado y el enfriamiento desde la pantalla bloqueada. El temporizador solo empieza cuando el secador informa que alcanzó la temperatura objetivo: sin progreso ficticio.
+
+LA SEGURIDAD ESTÁ EN EL SECADOR
+El firmware ESP32 gestiona el secado por sí mismo con límites de temperatura, control de sensores, supervisión del ventilador y watchdog. Si el iPhone sale de la habitación, el secado continúa de forma segura y SpoolDry se actualiza al volver.
+
+HISTORIAL Y ESTADÍSTICAS
+Cada sesión se guarda en tu iPhone con humedad inicial y final, temperatura media y gráfico. Consulta horas de secado, reducción media de humedad y tu material más usado.
+
+VARIOS SECADORES
+Nombra tus secadores (SpoolDry #1, #2 …) y cambia entre ellos.
+
+HARDWARE ABIERTO
+El firmware, el protocolo BLE, el esquema de cableado y la lista de materiales están publicados en la web de SpoolDry. El hardware es un proyecto DIY no certificado; sigue la guía de seguridad.
+
+PRECIO
+Tus 3 primeros secados son gratis. SpoolDry de por vida es una compra única que desbloquea secados ilimitados y varios secadores. Sin suscripción.
+
+¿Aún no tienes hardware? Prueba el secador de demostración integrado.

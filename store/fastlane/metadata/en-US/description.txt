@@ -1,0 +1,27 @@
+SpoolDry turns your ESP32-based filament dryer into a connected drying station. Your iPhone talks directly to the dryer over Bluetooth Low Energy: no account, no cloud, no internet required.
+
+KNOW WHEN YOUR FILAMENT IS DRY
+Wet filament strings, pops, foams and prints weak parts. SpoolDry shows the chamber temperature and relative humidity live, so you see the moisture leave the spool instead of guessing.
+
+BUILT FOR ENGINEERING POLYMERS
+Start from typical drying guidance for PLA, PETG, ABS, ASA, TPU, PA (nylon), PC, PVA, BVOH, PEEK, PEI/ULTEM, PPS and carbon- or glass-fiber grades. Every value is labelled as typical starting guidance with links to the manufacturer pages it was summarised from. Create your own profiles for the exact brands you print.
+
+LIVE ACTIVITY & DYNAMIC ISLAND
+Follow preheating, drying and cooldown from the Lock Screen. The timer only runs once the dryer reports that it reached the target temperature: no fake progress.
+
+SAFETY STAYS ON THE DRYER
+The ESP32 firmware runs the session on its own and enforces temperature limits, sensor checks, fan monitoring and a watchdog. If your iPhone leaves the room, drying continues safely and SpoolDry catches up when you return.
+
+HISTORY & STATISTICS
+Every session is saved on your iPhone with start and end humidity, average temperature and a chart. See total drying hours, average humidity reduction and your most-used material.
+
+MULTIPLE DRYERS
+Name your dryers (SpoolDry #1, #2 …) and switch between them.
+
+OPEN HARDWARE
+The firmware, BLE protocol, wiring diagram and bill of materials are published on the SpoolDry website. Hardware is a DIY project and is not certified; follow the safety guide.
+
+PRICING
+Your first 3 drying sessions are free. SpoolDry Lifetime is a one-time purchase that unlocks unlimited sessions and multiple dryers. No subscription.
+
+Try the built-in demo dryer if you have not built your hardware yet.

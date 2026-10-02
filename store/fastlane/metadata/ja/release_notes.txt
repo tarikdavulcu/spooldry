@@ -1,0 +1,7 @@
+SpoolDry 初回リリース：
+• ESP32フィラメントドライヤーをBluetoothで直接操作
+• 温度と湿度をリアルタイム表示
+• ライブアクティビティとDynamic Islandの乾燥タイマー
+• ホーム画面ウィジェット
+• PLA、PETG、ABS、ASA、TPU、PA、PC、PVA、BVOH、PEEK、PEI、PPS、繊維入りグレードの乾燥目安
+• オフラインの履歴と統計

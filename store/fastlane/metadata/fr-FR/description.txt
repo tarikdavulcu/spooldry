@@ -1,0 +1,27 @@
+SpoolDry transforme votre sécheur de filament ESP32 en station de séchage connectée. L'iPhone communique directement avec le sécheur en Bluetooth Low Energy : sans compte, sans cloud, sans internet.
+
+SACHEZ QUAND VOTRE FILAMENT EST SEC
+Un filament humide file, crépite, mousse et donne des pièces fragiles. SpoolDry affiche en direct la température de la chambre et l'humidité relative : vous voyez l'humidité quitter la bobine au lieu de deviner.
+
+CONÇU POUR LES POLYMÈRES TECHNIQUES
+Partez de repères de séchage typiques pour PLA, PETG, ABS, ASA, TPU, PA (nylon), PC, PVA, BVOH, PEEK, PEI/ULTEM, PPS et grades chargés en fibres de carbone ou de verre. Chaque valeur est indiquée comme repère de départ typique, avec les liens vers les pages des fabricants résumées. Créez vos propres profils pour vos marques.
+
+ACTIVITÉ EN DIRECT & DYNAMIC ISLAND
+Suivez préchauffage, séchage et refroidissement depuis l'écran verrouillé. Le minuteur ne démarre que lorsque le sécheur signale avoir atteint la température cible : aucune progression fictive.
+
+LA SÉCURITÉ RESTE DANS LE SÉCHEUR
+Le firmware ESP32 gère le séchage de façon autonome : limites de température, contrôle des capteurs, surveillance du ventilateur et watchdog. Si l'iPhone s'éloigne, le séchage continue en sécurité et SpoolDry se met à jour au retour.
+
+HISTORIQUE & STATISTIQUES
+Chaque séance est enregistrée sur l'iPhone avec humidité initiale et finale, température moyenne et graphique. Consultez les heures de séchage, la réduction moyenne d'humidité et votre matériau favori.
+
+PLUSIEURS SÉCHEURS
+Nommez vos sécheurs (SpoolDry #1, #2 …) et passez de l'un à l'autre.
+
+MATÉRIEL OUVERT
+Firmware, protocole BLE, schéma de câblage et nomenclature sont publiés sur le site SpoolDry. Le matériel est un projet DIY non certifié ; suivez le guide de sécurité.
+
+TARIF
+Vos 3 premiers séchages sont gratuits. SpoolDry à vie est un achat unique qui débloque les séchages illimités et plusieurs sécheurs. Sans abonnement.
+
+Pas encore de matériel ? Essayez le sécheur de démo intégré.

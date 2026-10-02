@@ -1,0 +1,60 @@
+{
+  "identifier": "8D3F5A21",
+  "nonRenewingSubscriptions": [],
+  "products": [
+    {
+      "displayPrice": "19.99",
+      "familyShareable": false,
+      "internalID": "6760000001",
+      "localizations": [
+        {
+          "description": "Unlimited drying sessions, multiple dryers and all future improvements. One-time purchase, no subscription.",
+          "displayName": "SpoolDry Lifetime",
+          "locale": "en_US"
+        },
+        {
+          "description": "Unbegrenzte Trocknungen, mehrere Trockner und alle künftigen Verbesserungen. Einmalkauf, kein Abo.",
+          "displayName": "SpoolDry Lifetime",
+          "locale": "de"
+        },
+        {
+          "description": "Séchages illimités, plusieurs sécheurs et toutes les futures améliorations. Achat unique, sans abonnement.",
+          "displayName": "SpoolDry à vie",
+          "locale": "fr"
+        },
+        {
+          "description": "Secados ilimitados, varios secadores y todas las mejoras futuras. Compra única, sin suscripción.",
+          "displayName": "SpoolDry de por vida",
+          "locale": "es"
+        },
+        {
+          "description": "جلسات تجفيف غير محدودة وعدة مجففات وجميع التحسينات المستقبلية. شراء لمرة واحدة بدون اشتراك.",
+          "displayName": "SpoolDry مدى الحياة",
+          "locale": "ar"
+        },
+        {
+          "description": "乾燥セッション無制限、複数のドライヤー、今後のすべての改善。買い切り、サブスクなし。",
+          "displayName": "SpoolDry 永久ライセンス",
+          "locale": "ja"
+        }
+      ],
+      "productID": "com.tarikdavulcu.spooldry.lifetime",
+      "referenceName": "SpoolDry Lifetime",
+      "type": "NonConsumable"
+    }
+  ],
+  "settings": {
+    "_applicationInternalID": "6760000000",
+    "_developerTeamID": "",
+    "_failTransactionsEnabled": false,
+    "_lastSynchronizedDate": 0,
+    "_locale": "en_US",
+    "_storefront": "USA",
+    "_storeKitErrors": []
+  },
+  "subscriptionGroups": [],
+  "version": {
+    "major": 4,
+    "minor": 0
+  }
+}

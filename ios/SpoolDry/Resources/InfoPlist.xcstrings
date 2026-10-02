@@ -1,0 +1,88 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "CFBundleDisplayName": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpoolDry"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpoolDry"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpoolDry"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpoolDry"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpoolDry"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpoolDry"
+          }
+        }
+      }
+    },
+    "NSBluetoothAlwaysUsageDescription": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpoolDry uses Bluetooth to connect directly to your SpoolDry filament dryer to read temperature and humidity and to start or stop drying. No data leaves your iPhone."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpoolDry nutzt Bluetooth, um sich direkt mit deinem SpoolDry-Filamenttrockner zu verbinden, Temperatur und Feuchte zu lesen und Trocknungen zu starten oder zu stoppen. Keine Daten verlassen dein iPhone."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpoolDry utilise le Bluetooth pour se connecter directement à votre sécheur de filament SpoolDry, lire la température et l'humidité, et démarrer ou arrêter le séchage. Aucune donnée ne quitte votre iPhone."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpoolDry usa Bluetooth para conectarse directamente a tu secador de filamento SpoolDry, leer la temperatura y la humedad e iniciar o detener el secado. Ningún dato sale de tu iPhone."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يستخدم SpoolDry البلوتوث للاتصال مباشرة بمجفف الخيوط SpoolDry لقراءة الحرارة والرطوبة وبدء التجفيف أو إيقافه. لا تغادر أي بيانات جهاز iPhone."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpoolDryはBluetoothでSpoolDryフィラメントドライヤーに直接接続し、温度と湿度の読み取りや乾燥の開始・停止を行います。データがiPhoneの外に送信されることはありません。"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

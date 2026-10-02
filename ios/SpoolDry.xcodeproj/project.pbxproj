@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26219B319E737DF95DE21929 /* SpoolDryKit in Frameworks */ = {isa = PBXBuildFile; productRef = D72B3B00CC1106142B9338B3 /* SpoolDryKit */; };
+		0BFC8428AB1D6FB8BE63EABF /* SpoolDryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 32D5263BF9F54335129926A6 /* SpoolDryKit */; };
+		D9A17C16984AFAAC3E706F1F /* SpoolDryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 58BB850FC8FEB11D41B4F6A0 /* SpoolDryKit */; };
+		F65588C8FBF9AB09881CDFD5 /* SpoolDryWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 07E6ABD33250ACF57D158157 /* SpoolDryWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5D5E092EF6F929627BA6054 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DF1F4D0E6737B56272558CA;
+			remoteInfo = SpoolDryWidgets;
+		};
+		EC8D852BA6BBB132088FC360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F4C32D74530AC756E939A4F;
+			remoteInfo = SpoolDry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6AB1A6F5C6A62D1C70CEC284 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F65588C8FBF9AB09881CDFD5 /* SpoolDryWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7F6D01D6546BCD07518D8398 /* SpoolDry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpoolDry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E6ABD33250ACF57D158157 /* SpoolDryWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpoolDryWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		50ED88076C07C90FF1B1A76B /* SpoolDryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpoolDryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C5CED81867846E28CC985431 /* Exceptions for "SpoolDry" folder in "SpoolDry" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Info.plist,
+				Resources/SpoolDry.entitlements,
+				Resources/SpoolDry.storekit,
+			);
+			target = 6F4C32D74530AC756E939A4F /* SpoolDry */;
+		};
+		BCB4C617506EBAD23B2782E4 /* Exceptions for "SpoolDryWidgets" folder in "SpoolDryWidgets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				SpoolDryWidgets.entitlements,
+			);
+			target = 2DF1F4D0E6737B56272558CA /* SpoolDryWidgets */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DF2EE23B2668782226AA64A2 /* SpoolDry */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C5CED81867846E28CC985431 /* Exceptions for "SpoolDry" folder in "SpoolDry" target */,
+			);
+			path = SpoolDry;
+			sourceTree = "<group>";
+		};
+		18538479DFE83FAEE0C59EF3 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B47C0BE32DB4FB80F07181E4 /* SpoolDryWidgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BCB4C617506EBAD23B2782E4 /* Exceptions for "SpoolDryWidgets" folder in "SpoolDryWidgets" target */,
+			);
+			path = SpoolDryWidgets;
+			sourceTree = "<group>";
+		};
+		A33CDA6FFC5BB1644174933C /* SpoolDryTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpoolDryTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		373BADBBA0722772BA1A53C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26219B319E737DF95DE21929 /* SpoolDryKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E3F49AE3151079E8853080F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BFC8428AB1D6FB8BE63EABF /* SpoolDryKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D01B36EDFED352B249985D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A17C16984AFAAC3E706F1F /* SpoolDryKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D3FC6DB5D0827F168A73277 = {
+			isa = PBXGroup;
+			children = (
+				DF2EE23B2668782226AA64A2 /* SpoolDry */,
+				18538479DFE83FAEE0C59EF3 /* Shared */,
+				B47C0BE32DB4FB80F07181E4 /* SpoolDryWidgets */,
+				A33CDA6FFC5BB1644174933C /* SpoolDryTests */,
+				1BADDC1D73C1A20F347483E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BADDC1D73C1A20F347483E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F6D01D6546BCD07518D8398 /* SpoolDry.app */,
+				07E6ABD33250ACF57D158157 /* SpoolDryWidgets.appex */,
+				50ED88076C07C90FF1B1A76B /* SpoolDryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F4C32D74530AC756E939A4F /* SpoolDry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FA50CB9950BD36C1E2A77C2 /* Build configuration list for PBXNativeTarget "SpoolDry" */;
+			buildPhases = (
+				B3A5E7ECB7F9C64CA38A7960 /* Sources */,
+				373BADBBA0722772BA1A53C9 /* Frameworks */,
+				F44E03EA52FB7FD8D73022C2 /* Resources */,
+				6AB1A6F5C6A62D1C70CEC284 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				697C6CE515FCA105619BE40C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DF2EE23B2668782226AA64A2 /* SpoolDry */,
+				18538479DFE83FAEE0C59EF3 /* Shared */,
+			);
+			name = SpoolDry;
+			packageProductDependencies = (
+				D72B3B00CC1106142B9338B3 /* SpoolDryKit */,
+			);
+			productName = SpoolDry;
+			productReference = 7F6D01D6546BCD07518D8398 /* SpoolDry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DF1F4D0E6737B56272558CA /* SpoolDryWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 943C5CA83597D6828D3CAC21 /* Build configuration list for PBXNativeTarget "SpoolDryWidgets" */;
+			buildPhases = (
+				491F76DB451B08E15D6F0575 /* Sources */,
+				8E3F49AE3151079E8853080F /* Frameworks */,
+				9C784264EA5D7245620517E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B47C0BE32DB4FB80F07181E4 /* SpoolDryWidgets */,
+				18538479DFE83FAEE0C59EF3 /* Shared */,
+			);
+			name = SpoolDryWidgets;
+			packageProductDependencies = (
+				32D5263BF9F54335129926A6 /* SpoolDryKit */,
+			);
+			productName = SpoolDryWidgets;
+			productReference = 07E6ABD33250ACF57D158157 /* SpoolDryWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A71E8017F59719C02F5734BD /* SpoolDryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9886C2C954EA7FB45D786A /* Build configuration list for PBXNativeTarget "SpoolDryTests" */;
+			buildPhases = (
+				A8330B88427318CB14E63480 /* Sources */,
+				8D01B36EDFED352B249985D7 /* Frameworks */,
+				3DEE228C893EC90C0F6E317B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0606A00E5A561947869F1FE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A33CDA6FFC5BB1644174933C /* SpoolDryTests */,
+			);
+			name = SpoolDryTests;
+			packageProductDependencies = (
+				58BB850FC8FEB11D41B4F6A0 /* SpoolDryKit */,
+			);
+			productName = SpoolDryTests;
+			productReference = 50ED88076C07C90FF1B1A76B /* SpoolDryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					6F4C32D74530AC756E939A4F = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					2DF1F4D0E6737B56272558CA = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					A71E8017F59719C02F5734BD = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 6F4C32D74530AC756E939A4F;
+					};
+				};
+			};
+			buildConfigurationList = 6C3FEEA60674E07FC094DAFA /* Build configuration list for PBXProject "SpoolDry" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				fr,
+				es,
+				ar,
+				ja,
+			);
+			mainGroup = 8D3FC6DB5D0827F168A73277;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C9ACC0F1D4E12B1D8761931E /* XCLocalSwiftPackageReference "Packages/SpoolDryKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1BADDC1D73C1A20F347483E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F4C32D74530AC756E939A4F /* SpoolDry */,
+				2DF1F4D0E6737B56272558CA /* SpoolDryWidgets */,
+				A71E8017F59719C02F5734BD /* SpoolDryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F44E03EA52FB7FD8D73022C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C784264EA5D7245620517E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DEE228C893EC90C0F6E317B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3A5E7ECB7F9C64CA38A7960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491F76DB451B08E15D6F0575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8330B88427318CB14E63480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		697C6CE515FCA105619BE40C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DF1F4D0E6737B56272558CA /* SpoolDryWidgets */;
+			targetProxy = E5D5E092EF6F929627BA6054 /* PBXContainerItemProxy */;
+		};
+		D0606A00E5A561947869F1FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F4C32D74530AC756E939A4F /* SpoolDry */;
+			targetProxy = EC8D852BA6BBB132088FC360 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39449EDF7B151AF1BDA56BF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		453FF012BC101FA2B9706FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F28A85BE60487DC1BDCF015E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpoolDry/Resources/SpoolDry.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SpoolDry/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarikdavulcu.spooldry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		A86756326B10413DEF26E20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpoolDry/Resources/SpoolDry.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SpoolDry/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarikdavulcu.spooldry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		FD1C361697CF0A1D3E990913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SpoolDryWidgets/SpoolDryWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SpoolDryWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarikdavulcu.spooldry.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		06DFB1829FF7266211CAA9B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SpoolDryWidgets/SpoolDryWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SpoolDryWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarikdavulcu.spooldry.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		C8D8812CF522ADDC23333C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarikdavulcu.spooldry.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpoolDry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpoolDry";
+			};
+			name = Debug;
+		};
+		0868FB48DE6BB567198BEAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarikdavulcu.spooldry.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpoolDry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpoolDry";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C3FEEA60674E07FC094DAFA /* Build configuration list for PBXProject "SpoolDry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39449EDF7B151AF1BDA56BF2 /* Debug */,
+				453FF012BC101FA2B9706FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FA50CB9950BD36C1E2A77C2 /* Build configuration list for PBXNativeTarget "SpoolDry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28A85BE60487DC1BDCF015E /* Debug */,
+				A86756326B10413DEF26E20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		943C5CA83597D6828D3CAC21 /* Build configuration list for PBXNativeTarget "SpoolDryWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1C361697CF0A1D3E990913 /* Debug */,
+				06DFB1829FF7266211CAA9B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB9886C2C954EA7FB45D786A /* Build configuration list for PBXNativeTarget "SpoolDryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8D8812CF522ADDC23333C1B /* Debug */,
+				0868FB48DE6BB567198BEAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C9ACC0F1D4E12B1D8761931E /* XCLocalSwiftPackageReference "Packages/SpoolDryKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/SpoolDryKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D72B3B00CC1106142B9338B3 /* SpoolDryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9ACC0F1D4E12B1D8761931E /* XCLocalSwiftPackageReference "Packages/SpoolDryKit" */;
+			productName = SpoolDryKit;
+		};
+		32D5263BF9F54335129926A6 /* SpoolDryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9ACC0F1D4E12B1D8761931E /* XCLocalSwiftPackageReference "Packages/SpoolDryKit" */;
+			productName = SpoolDryKit;
+		};
+		58BB850FC8FEB11D41B4F6A0 /* SpoolDryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9ACC0F1D4E12B1D8761931E /* XCLocalSwiftPackageReference "Packages/SpoolDryKit" */;
+			productName = SpoolDryKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}

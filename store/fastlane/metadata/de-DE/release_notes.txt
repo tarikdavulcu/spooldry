@@ -1,0 +1,7 @@
+Erste Version von SpoolDry:
+• Direkte Bluetooth-Steuerung deines ESP32-Filamenttrockners
+• Temperatur und Feuchte live
+• Trocknungs-Timer als Live-Aktivität und in der Dynamic Island
+• Widgets für den Home-Bildschirm
+• Typische Trocknungswerte für PLA, PETG, ABS, ASA, TPU, PA, PC, PVA, BVOH, PEEK, PEI, PPS und faserverstärkte Typen
+• Offline-Verlauf und Statistiken
