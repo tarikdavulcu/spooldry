@@ -21,7 +21,10 @@ Nommez vos sécheurs (SpoolDry #1, #2 …) et passez de l'un à l'autre.
 MATÉRIEL OUVERT
 Firmware, protocole BLE, schéma de câblage et nomenclature sont publiés sur le site SpoolDry. Le matériel est un projet DIY non certifié ; suivez le guide de sécurité.
 
+PAS ENCORE DE SÉCHEUR ? SURVEILLEZ VOS BOÎTES SÈCHES
+Placez dans chaque boîte à filament un hygromètre Bluetooth du commerce qui émet au format ouvert BTHome (par exemple Shelly BLU H&T ou des capteurs Xiaomi avec le firmware PVVX). SpoolDry le lit sans appairage ni cloud, conserve l'historique d'humidité de chaque boîte, vous alerte quand une boîte devient trop humide et estime quelles bobines sécher avant la prochaine impression.
+
 TARIF
-Vos 3 premiers séchages sont gratuits. SpoolDry à vie est un achat unique qui débloque les séchages illimités et plusieurs sécheurs. Sans abonnement.
+Vos 3 premiers séchages sont gratuits. SpoolDry à vie est un achat unique qui débloque les séchages illimités et plusieurs sécheurs. Sans abonnement. Deux boîtes sèches surveillées sont gratuites ; l'achat à vie supprime la limite.
 
 Pas encore de matériel ? Essayez le sécheur de démo intégré.

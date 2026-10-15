@@ -41,8 +41,11 @@ Name your dryers (SpoolDry #1, #2 …) and switch between them.
 OPEN HARDWARE
 The firmware, BLE protocol, wiring diagram and bill of materials are published on the SpoolDry website. Hardware is a DIY project and is not certified; follow the safety guide.
 
+NO DRYER YET? MONITOR YOUR DRY BOXES
+Put an off-the-shelf Bluetooth hygrometer that broadcasts the open BTHome format (for example Shelly BLU H&T, or Xiaomi sensors with PVVX firmware) into each filament box. SpoolDry reads it without pairing or cloud, keeps a humidity history per box, warns you when a box gets too humid and estimates which spools need drying before your next print.
+
 PRICING
-Your first 3 drying sessions are free. SpoolDry Lifetime is a one-time purchase that unlocks unlimited sessions and multiple dryers. No subscription.
+Your first 3 drying sessions are free. SpoolDry Lifetime is a one-time purchase that unlocks unlimited sessions and multiple dryers. No subscription. Two monitored dry boxes are free; Lifetime removes the limit.
 
 Try the built-in demo dryer if you have not built your hardware yet.""",
 },
@@ -78,8 +81,11 @@ Benenne deine Trockner (SpoolDry #1, #2 …) und wechsle zwischen ihnen.
 OFFENE HARDWARE
 Firmware, BLE-Protokoll, Schaltplan und Stückliste findest du auf der SpoolDry-Website. Die Hardware ist ein DIY-Projekt und nicht zertifiziert; beachte die Sicherheitshinweise.
 
+NOCH KEIN TROCKNER? TROCKENBOXEN ÜBERWACHEN
+Lege ein handelsübliches Bluetooth-Hygrometer, das im offenen BTHome-Format sendet (z. B. Shelly BLU H&T oder Xiaomi-Sensoren mit PVVX-Firmware), in jede Filamentbox. SpoolDry liest es ohne Kopplung und ohne Cloud, speichert den Feuchteverlauf jeder Box, warnt bei zu hoher Feuchte und schätzt, welche Spulen vor dem nächsten Druck getrocknet werden sollten.
+
 PREIS
-Deine ersten 3 Trocknungen sind kostenlos. SpoolDry Lifetime ist ein Einmalkauf für unbegrenzte Trocknungen und mehrere Trockner. Kein Abo.
+Deine ersten 3 Trocknungen sind kostenlos. SpoolDry Lifetime ist ein Einmalkauf für unbegrenzte Trocknungen und mehrere Trockner. Kein Abo. Zwei überwachte Trockenboxen sind kostenlos; Lifetime hebt die Grenze auf.
 
 Noch keine Hardware gebaut? Probiere den integrierten Demo-Trockner.""",
 },
@@ -115,8 +121,11 @@ Nommez vos sécheurs (SpoolDry #1, #2 …) et passez de l'un à l'autre.
 MATÉRIEL OUVERT
 Firmware, protocole BLE, schéma de câblage et nomenclature sont publiés sur le site SpoolDry. Le matériel est un projet DIY non certifié ; suivez le guide de sécurité.
 
+PAS ENCORE DE SÉCHEUR ? SURVEILLEZ VOS BOÎTES SÈCHES
+Placez dans chaque boîte à filament un hygromètre Bluetooth du commerce qui émet au format ouvert BTHome (par exemple Shelly BLU H&T ou des capteurs Xiaomi avec le firmware PVVX). SpoolDry le lit sans appairage ni cloud, conserve l'historique d'humidité de chaque boîte, vous alerte quand une boîte devient trop humide et estime quelles bobines sécher avant la prochaine impression.
+
 TARIF
-Vos 3 premiers séchages sont gratuits. SpoolDry à vie est un achat unique qui débloque les séchages illimités et plusieurs sécheurs. Sans abonnement.
+Vos 3 premiers séchages sont gratuits. SpoolDry à vie est un achat unique qui débloque les séchages illimités et plusieurs sécheurs. Sans abonnement. Deux boîtes sèches surveillées sont gratuites ; l'achat à vie supprime la limite.
 
 Pas encore de matériel ? Essayez le sécheur de démo intégré.""",
 },
@@ -152,8 +161,11 @@ Nombra tus secadores (SpoolDry #1, #2 …) y cambia entre ellos.
 HARDWARE ABIERTO
 El firmware, el protocolo BLE, el esquema de cableado y la lista de materiales están publicados en la web de SpoolDry. El hardware es un proyecto DIY no certificado; sigue la guía de seguridad.
 
+¿AÚN SIN SECADOR? VIGILA TUS CAJAS SECAS
+Coloca en cada caja de filamento un higrómetro Bluetooth comercial que emita en el formato abierto BTHome (por ejemplo Shelly BLU H&T o sensores Xiaomi con firmware PVVX). SpoolDry lo lee sin emparejar y sin nube, guarda el historial de humedad de cada caja, te avisa cuando una caja está demasiado húmeda y estima qué bobinas conviene secar antes de la próxima impresión.
+
 PRECIO
-Tus 3 primeros secados son gratis. SpoolDry de por vida es una compra única que desbloquea secados ilimitados y varios secadores. Sin suscripción.
+Tus 3 primeros secados son gratis. SpoolDry de por vida es una compra única que desbloquea secados ilimitados y varios secadores. Sin suscripción. Dos cajas secas monitorizadas son gratis; la compra de por vida elimina el límite.
 
 ¿Aún no tienes hardware? Prueba el secador de demostración integrado.""",
 },
@@ -189,8 +201,11 @@ Tus 3 primeros secados son gratis. SpoolDry de por vida es una compra única que
 عتاد مفتوح
 البرنامج الثابت وبروتوكول BLE ومخطط التوصيل وقائمة المكونات منشورة على موقع SpoolDry. العتاد مشروع صنع ذاتي وغير معتمد؛ اتبع دليل السلامة.
 
+لا يوجد مجفف بعد؟ راقب صناديق التجفيف
+ضع في كل صندوق خيوط مقياس رطوبة بلوتوث تجاريًا يبث بصيغة BTHome المفتوحة (مثل Shelly BLU H&T أو حساسات Xiaomi ببرنامج PVVX). يقرؤه SpoolDry دون اقتران أو سحابة، ويحفظ سجل الرطوبة لكل صندوق، وينبهك عندما تزداد رطوبة الصندوق، ويقدّر البكرات التي تحتاج إلى تجفيف قبل الطباعة التالية.
+
 السعر
-أول 3 جلسات تجفيف مجانية. SpoolDry مدى الحياة شراء لمرة واحدة يفتح جلسات غير محدودة وعدة مجففات. بدون اشتراك.
+أول 3 جلسات تجفيف مجانية. SpoolDry مدى الحياة شراء لمرة واحدة يفتح جلسات غير محدودة وعدة مجففات. بدون اشتراك. صندوقا تجفيف مراقبان مجانًا، والشراء مدى الحياة يلغي الحد.
 
 لم تبنِ العتاد بعد؟ جرّب المجفف التجريبي المدمج.""",
 },
@@ -226,8 +241,11 @@ ESP32ファームウェアがセッションを自律的に実行し、温度上
 オープンハードウェア
 ファームウェア、BLEプロトコル、配線図、部品表はSpoolDryのウェブサイトで公開しています。ハードウェアは認証されていないDIYプロジェクトです。安全ガイドに従ってください。
 
+ドライヤーがなくても：ドライボックスを監視
+オープンなBTHome形式で送信する市販のBluetooth湿度計（例：Shelly BLU H&T、PVVXファームウェアのXiaomiセンサー）を各フィラメントボックスに入れてください。SpoolDryはペアリングやクラウドなしで読み取り、ボックスごとの湿度履歴を記録し、湿度が高くなると知らせ、次の印刷前に乾燥が必要なスプールを推定します。
+
 料金
-最初の3回の乾燥は無料。SpoolDry 永久ライセンスは無制限の乾燥と複数ドライヤーを解除する買い切りです。サブスクはありません。
+最初の3回の乾燥は無料。SpoolDry 永久ライセンスは無制限の乾燥と複数ドライヤーを解除する買い切りです。サブスクはありません。監視するドライボックスは2つまで無料、永久ライセンスで無制限になります。
 
 ハードウェアがまだない方は、内蔵のデモドライヤーをお試しください。""",
 },

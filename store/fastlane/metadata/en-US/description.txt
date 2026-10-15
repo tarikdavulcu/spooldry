@@ -21,7 +21,10 @@ Name your dryers (SpoolDry #1, #2 …) and switch between them.
 OPEN HARDWARE
 The firmware, BLE protocol, wiring diagram and bill of materials are published on the SpoolDry website. Hardware is a DIY project and is not certified; follow the safety guide.
 
+NO DRYER YET? MONITOR YOUR DRY BOXES
+Put an off-the-shelf Bluetooth hygrometer that broadcasts the open BTHome format (for example Shelly BLU H&T, or Xiaomi sensors with PVVX firmware) into each filament box. SpoolDry reads it without pairing or cloud, keeps a humidity history per box, warns you when a box gets too humid and estimates which spools need drying before your next print.
+
 PRICING
-Your first 3 drying sessions are free. SpoolDry Lifetime is a one-time purchase that unlocks unlimited sessions and multiple dryers. No subscription.
+Your first 3 drying sessions are free. SpoolDry Lifetime is a one-time purchase that unlocks unlimited sessions and multiple dryers. No subscription. Two monitored dry boxes are free; Lifetime removes the limit.
 
 Try the built-in demo dryer if you have not built your hardware yet.

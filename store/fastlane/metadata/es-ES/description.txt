@@ -21,7 +21,10 @@ Nombra tus secadores (SpoolDry #1, #2 …) y cambia entre ellos.
 HARDWARE ABIERTO
 El firmware, el protocolo BLE, el esquema de cableado y la lista de materiales están publicados en la web de SpoolDry. El hardware es un proyecto DIY no certificado; sigue la guía de seguridad.
 
+¿AÚN SIN SECADOR? VIGILA TUS CAJAS SECAS
+Coloca en cada caja de filamento un higrómetro Bluetooth comercial que emita en el formato abierto BTHome (por ejemplo Shelly BLU H&T o sensores Xiaomi con firmware PVVX). SpoolDry lo lee sin emparejar y sin nube, guarda el historial de humedad de cada caja, te avisa cuando una caja está demasiado húmeda y estima qué bobinas conviene secar antes de la próxima impresión.
+
 PRECIO
-Tus 3 primeros secados son gratis. SpoolDry de por vida es una compra única que desbloquea secados ilimitados y varios secadores. Sin suscripción.
+Tus 3 primeros secados son gratis. SpoolDry de por vida es una compra única que desbloquea secados ilimitados y varios secadores. Sin suscripción. Dos cajas secas monitorizadas son gratis; la compra de por vida elimina el límite.
 
 ¿Aún no tienes hardware? Prueba el secador de demostración integrado.

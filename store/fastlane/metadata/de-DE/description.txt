@@ -21,7 +21,10 @@ Benenne deine Trockner (SpoolDry #1, #2 …) und wechsle zwischen ihnen.
 OFFENE HARDWARE
 Firmware, BLE-Protokoll, Schaltplan und Stückliste findest du auf der SpoolDry-Website. Die Hardware ist ein DIY-Projekt und nicht zertifiziert; beachte die Sicherheitshinweise.
 
+NOCH KEIN TROCKNER? TROCKENBOXEN ÜBERWACHEN
+Lege ein handelsübliches Bluetooth-Hygrometer, das im offenen BTHome-Format sendet (z. B. Shelly BLU H&T oder Xiaomi-Sensoren mit PVVX-Firmware), in jede Filamentbox. SpoolDry liest es ohne Kopplung und ohne Cloud, speichert den Feuchteverlauf jeder Box, warnt bei zu hoher Feuchte und schätzt, welche Spulen vor dem nächsten Druck getrocknet werden sollten.
+
 PREIS
-Deine ersten 3 Trocknungen sind kostenlos. SpoolDry Lifetime ist ein Einmalkauf für unbegrenzte Trocknungen und mehrere Trockner. Kein Abo.
+Deine ersten 3 Trocknungen sind kostenlos. SpoolDry Lifetime ist ein Einmalkauf für unbegrenzte Trocknungen und mehrere Trockner. Kein Abo. Zwei überwachte Trockenboxen sind kostenlos; Lifetime hebt die Grenze auf.
 
 Noch keine Hardware gebaut? Probiere den integrierten Demo-Trockner.

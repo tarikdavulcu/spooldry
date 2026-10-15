@@ -15,6 +15,12 @@ sys.path.insert(0, str(ROOT / "tools" / "l10n"))
 from aso_data import ASO, LOCALES  # noqa: E402
 from strings_app import T  # noqa: E402
 from strings_dynamic import D  # noqa: E402
+from strings_storage import S, SD  # noqa: E402
+
+for _k, _v in S.items():
+    T.setdefault(_k, _v)
+for _k, _v in SD.items():
+    D.setdefault(_k, _v)
 
 LANG_INDEX = {"de": 0, "fr": 1, "es": 2, "ar": 3, "ja": 4}
 FONTS = (ROOT / "design" / "fonts").resolve().as_uri()
@@ -26,7 +32,7 @@ DEVICES = {
     "ipad13": {"w": 1032, "h": 1376, "scale": 2, "frame": "tablet"},
 }
 
-SLUGS = ["track", "temp-humidity", "profiles", "ble", "live-activity", "complete", "offline", "lifetime"]
+SLUGS = ["track", "temp-humidity", "profiles", "ble", "live-activity", "complete", "offline", "lifetime", "storage"]
 
 DATES = {
     "en": "Thursday, October 1", "de": "Donnerstag, 1. Oktober", "fr": "jeudi 1 octobre",
@@ -89,6 +95,7 @@ ICONS = {
     "plane": '<svg viewBox="0 0 24 24"><path d="M21 15v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V8l-8 5v2l8-2.5V18l-2 1.5V21l3.5-1 3.5 1v-1.5L13 18v-5.5z" fill="currentColor"/></svg>',
     "seal": '<svg viewBox="0 0 24 24"><path d="M12 2l2.4 2 3.1-.3.9 3 2.7 1.6-1 2.9 1 2.9-2.7 1.6-.9 3-3.1-.3L12 22l-2.4-2-3.1.3-.9-3L2.9 15.7l1-2.9-1-2.9 2.7-1.6.9-3 3.1.3z" fill="currentColor"/><path d="M8 12.3l2.7 2.7L16 9.7" fill="none" stroke="#0b1418" stroke-width="2.2" stroke-linecap="round"/></svg>',
     "stop": '<svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/></svg>',
+    "box": '<svg viewBox="0 0 24 24"><path d="M3 7h18v4H3zM5 11v9h14v-9M10 15h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg>',
     "inf": '<svg viewBox="0 0 24 24"><path d="M7 8.5c-2 0-3.5 1.5-3.5 3.5S5 15.5 7 15.5c3.5 0 6.5-7 10-7 2 0 3.5 1.5 3.5 3.5S19 15.5 17 15.5c-3.5 0-6.5-7-10-7z" fill="none" stroke="currentColor" stroke-width="2"/></svg>',
 }
 
@@ -184,7 +191,7 @@ body.ja { font-family: 'Noto Sans CJK JP', Inter, sans-serif; }
 
 
 def tabbar(lang, active):
-    items = [("thermo", "Dryer"), ("list", "Profiles"), ("clock", "History"), ("cpu", "Device"), ("gear", "Settings")]
+    items = [("thermo", "Dryer"), ("box", "Storage"), ("list", "Profiles"), ("clock", "History"), ("gear", "Settings")]
     return '<div class="tabbar">' + "".join(
         f'<div class="tab {"on" if i == active else ""}">{icon(ic)}<span>{E(tr(lang, k))}</span></div>' for i, (ic, k) in enumerate(items)) + "</div>"
 
@@ -309,14 +316,70 @@ def screen_offline(lang):
 
 
 def screen_paywall(lang, icon_uri):
-    bens = ["Unlimited drying sessions", "Live Activity & Dynamic Island on every bake", "Custom filament profiles", "Full history & statistics", "Multiple dryers", "All future improvements"]
-    ics = ["inf", "wave", "list", "clock", "cpu", "seal"]
+    bens = ["Unlimited drying sessions", "Live Activity & Dynamic Island on every bake", "Custom filament profiles", "Full history & statistics", "Multiple dryers", "Unlimited monitored dry boxes", "All future improvements"]
+    ics = ["inf", "wave", "list", "clock", "cpu", "box", "seal"]
     lis = "".join(f'<div class="li">{icon(i)}<span>{E(tr(lang,b))}</span></div>' for b, i in zip(bens, ics))
     price = '<div class="price">$19.99</div>' if lang == "en" else ""
     return f'''<div class="paywall"><img src="{icon_uri}"><h2>{E(tr(lang,"SpoolDry Lifetime"))}</h2>{price}
 <div class="otp">{E(tr(lang,"ONE-TIME PURCHASE"))}</div><div style="color:var(--sub);margin-top:4px">{E(tr(lang,"No subscription."))}</div>
 <div class="list ben">{lis}</div><div class="btn" style="margin-top:18px">{E(tr(lang,"Unlock Lifetime"))}</div>
 <div style="margin-top:10px;font-size:14px;color:var(--accent)">{E(tr(lang,"Restore Purchases"))}</div></div>'''
+
+
+STORAGE_HEAD = {
+    "en": ("Monitor Your Dry Boxes", "Bluetooth hygrometers in your filament boxes, and which spools need drying."),
+    "de": ("Trockenboxen überwachen", "Bluetooth-Hygrometer in deinen Filamentboxen – und welche Spulen getrocknet werden müssen."),
+    "fr": ("Surveillez vos boîtes sèches", "Des hygromètres Bluetooth dans vos boîtes, et les bobines à sécher."),
+    "es": ("Vigila tus cajas secas", "Higrómetros Bluetooth en tus cajas de filamento y qué bobinas hay que secar."),
+    "ar": ("راقب صناديق التجفيف", "مقاييس رطوبة بلوتوث في صناديق الخيوط، ومعرفة البكرات التي تحتاج إلى تجفيف."),
+    "ja": ("ドライボックスを監視", "ボックス内のBluetooth湿度計と、乾燥が必要なスプールがひと目でわかります。"),
+}
+AGO = {
+    "en": ("2 days ago", "9 days ago", "yesterday"), "de": ("vor 2 Tagen", "vor 9 Tagen", "gestern"),
+    "fr": ("il y a 2 jours", "il y a 9 jours", "hier"), "es": ("hace 2 días", "hace 9 días", "ayer"),
+    "ar": ("قبل يومين", "قبل 9 أيام", "أمس"), "ja": ("2日前", "9日前", "昨日"),
+}
+
+
+def spark(points, color, limit_y, w=320, h=46):
+    pts = " ".join(f"{i * w / (len(points) - 1):.1f},{h - v / 40 * h:.1f}" for i, v in enumerate(points))
+    ly = h - limit_y / 40 * h
+    return (f'<svg viewBox="0 0 {w} {h}" width="100%" height="{h}" style="margin-top:8px">'
+            f'<line x1="0" x2="{w}" y1="{ly:.1f}" y2="{ly:.1f}" stroke="#F24D45" stroke-opacity=".75" stroke-dasharray="4 4"/>'
+            f'<polyline points="{pts}" fill="none" stroke="{color}" stroke-width="2.5" stroke-linejoin="round"/></svg>')
+
+
+def screen_storage(lang):
+    import math
+    dry = [15 + 2.2 * math.sin(i / 3) for i in range(30)]
+    wet = [17 + i * 0.4 + 1.5 * math.sin(i / 2) for i in range(30)]
+
+    def badge(key, color, ic):
+        return f'<span class="badge" style="background:{color}2e;color:{color}">{icon(ic)}{E(tr(lang, key))}</span>'
+
+    def box(name, h, t, color, b, data, spools):
+        return f'''<div class="card" style="margin-bottom:10px"><div class="row between"><div><div style="font-weight:700;font-size:16.5px">{E(name)}</div>
+<div style="font-size:12px;color:var(--sub)">{E(fmt(lang, "Limit %@", pct(lang, 20)))} · {E(fmt(lang, "%lld spools", spools))}</div></div>{b}</div>
+<div class="row" style="gap:20px;margin-top:6px;align-items:baseline"><div><div style="font-size:34px;font-weight:800;color:{color};font-variant-numeric:tabular-nums">{pct(lang, h)}</div>
+<div style="font-size:11.5px;color:var(--sub)">{E(tr(lang, "Humidity"))}</div></div><div><div style="font-size:19px;font-weight:700">{temp(lang, t)}</div>
+<div style="font-size:11.5px;color:var(--sub)">{E(tr(lang, "Temperature"))}</div></div></div>{spark(data, color, 20)}</div>'''
+
+    ok = badge("Dry", "#33C778", "seal")
+    humid = badge("Too humid", "#F24D45", "drop")
+    boxes = box("Nylon", 14.6, 23.4, "#4FA8F2", ok, dry, 3) + box("PETG", 27.8, 24.1, "#F24D45", humid, wet, 2)
+
+    def spool(title, where, ago, key, color, ic):
+        return (f'<div class="li"><span class="ic" style="font-size:24px;color:var(--accent)">{ICONS["spool"]}</span><div style="flex:1;min-width:0">'
+                f'<div class="t">{E(title)}</div><div class="s">{E(where)} · {E(fmt(lang, "Dried %@", ago))}</div></div>'
+                f'<span class="badge" style="background:{color}2e;color:{color};font-size:12px;white-space:nowrap">{icon(ic)}{E(tr(lang, key))}</span></div>')
+
+    ago = AGO[lang]
+    rows = (spool("PETG Black", "PETG", ago[1], "spool.condition.needsDrying", "#F24D45", "flame")
+            + spool("TPU 95A", tr(lang, "Room air"), ago[0], "spool.condition.watch", "#F5A623", "clock")
+            + spool("PA6-CF", "Nylon", ago[2], "spool.condition.dry", "#33C778", "seal"))
+    return f'''<div class="app"><div class="title">{E(tr(lang, "Storage"))}</div>
+<div style="font-weight:800;font-size:18px;margin:2px 2px 8px">{E(tr(lang, "Dry boxes"))}</div>{boxes}
+<div style="font-weight:800;font-size:18px;margin:6px 2px 8px">{E(tr(lang, "Spools"))}</div><div class="list">{rows}</div></div>'''
 
 
 def page(lang, device, idx, icon_uri):
@@ -330,7 +393,7 @@ def page(lang, device, idx, icon_uri):
     css = CSS.replace("{FONTS}", FONTS).replace("{W}", str(w)).replace("{H}", str(h))
     for k, v in geo.items():
         css = css.replace("{" + k + "}", str(v))
-    headline = ASO[lang]["headlines"][idx]
+    headline = ASO[lang]["headlines"][idx] if idx < len(ASO[lang]["headlines"]) else ""
     sub_keys = ["Live chamber temperature and relative humidity, with a full history of every bake.",
                 "Live chamber temperature and relative humidity, with a full history of every bake.",
                 "Values are typical starting guidance compiled from manufacturer recommendations, not universal requirements. Your filament's data sheet always wins.",
@@ -338,16 +401,20 @@ def page(lang, device, idx, icon_uri):
                 "Live Activities and the Dynamic Island show the real dryer state and remaining time.",
                 "Your filament is dry. Store it sealed with desiccant.",
                 "Your iPhone talks directly to the dryer over Bluetooth. No account, no cloud, works offline.",
-                "Payment is charged to your Apple Account. One purchase unlocks SpoolDry on this Apple Account; there are no recurring charges."]
+                "Payment is charged to your Apple Account. One purchase unlocks SpoolDry on this Apple Account; there are no recurring charges.",
+                "No subscription."]
     sub = tr(lang, sub_keys[idx])
     if idx == 2:
         sub = tr(lang, "SpoolDry tracks drying sessions for PLA through PA-CF, with typical guidance for engineering polymers.")
     if idx == 7:
         sub = tr(lang, "No subscription.") + " " + fmt(lang, "You've used %lld of %lld free drying sessions.", 3, 3).split(".")[0].strip()
         sub = tr(lang, "No subscription.")
+    if idx == 8:
+        headline, sub = STORAGE_HEAD[lang]
     body = [dashboard(lang), screen_temp_humidity(lang), screen_profiles(lang), screen_ble(lang),
-            screen_live_activity(lang), screen_complete(lang, icon_uri), screen_offline(lang), screen_paywall(lang, icon_uri)][idx]
-    tabs = {0: 0, 1: 0, 2: 1, 5: 0, 6: 2}
+            screen_live_activity(lang), screen_complete(lang, icon_uri), screen_offline(lang), screen_paywall(lang, icon_uri),
+            screen_storage(lang)][idx]
+    tabs = {0: 0, 1: 0, 2: 2, 5: 0, 6: 3, 8: 1}
     bar = tabbar(lang, tabs[idx]) if idx in tabs else ""
     top = "" if idx == 4 else status_bar()
     rtl = ' dir="rtl"' if lang == "ar" else ""
