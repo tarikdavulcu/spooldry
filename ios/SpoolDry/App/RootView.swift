@@ -33,15 +33,15 @@ struct MainTabView: View {
             DashboardView()
                 .tabItem { Label("Dryer", systemImage: "thermometer.and.liquid.waves") }
                 .tag(AppTab.dashboard)
+            StorageView()
+                .tabItem { Label("Storage", systemImage: "archivebox") }
+                .tag(AppTab.storage)
             ProfilesView()
                 .tabItem { Label("Profiles", systemImage: "list.bullet.rectangle") }
                 .tag(AppTab.profiles)
             HistoryView()
                 .tabItem { Label("History", systemImage: "clock.arrow.circlepath") }
                 .tag(AppTab.history)
-            DevicesView()
-                .tabItem { Label("Device", systemImage: "cpu") }
-                .tag(AppTab.device)
             SettingsView()
                 .tabItem { Label("Settings", systemImage: "gearshape") }
                 .tag(AppTab.settings)

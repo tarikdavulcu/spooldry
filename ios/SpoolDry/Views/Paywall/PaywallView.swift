@@ -13,6 +13,7 @@ struct PaywallView: View {
         ("list.bullet.rectangle", "Custom filament profiles"),
         ("clock.arrow.circlepath", "Full history & statistics"),
         ("cpu", "Multiple dryers"),
+        ("archivebox", "Unlimited monitored dry boxes"),
         ("sparkles", "All future improvements"),
     ]
 

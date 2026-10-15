@@ -4,7 +4,7 @@ import SpoolDryKit
 import SwiftData
 
 enum AppTab: Hashable {
-    case dashboard, profiles, history, device, settings
+    case dashboard, storage, profiles, history, device, settings
 }
 
 /// Root application state. Owns the BLE stack, StoreKit and the session coordinator.
@@ -15,10 +15,25 @@ final class AppModel {
     let ble = BLEManager()
     let store: StoreManager
     let sessions: SessionCoordinator
+    let storage: StorageCoordinator
 
     var selectedTab: AppTab = .dashboard
     var showPaywall = false
     var showDeviceSetup = false
+    /// Spool the user wants to dry from the Storage tab; the dashboard opens Start Drying with it.
+    var pendingSpoolToDry: UUID?
+    /// The dryer list opened as a sheet from the dashboard.
+    var showDevices = false
+
+    /// Root-level sheets (setup, paywall) cannot open on top of another sheet; close the dryer list first.
+    func presentFromRoot(_ action: @escaping @MainActor () -> Void) {
+        guard showDevices else { action(); return }
+        showDevices = false
+        Task { @MainActor in
+            try? await Task.sleep(for: .milliseconds(450))
+            action()
+        }
+    }
     /// The dryer shown on the dashboard (persisted).
     var activeDeviceID: UUID? {
         get { storedActiveDeviceID }
@@ -36,12 +51,16 @@ final class AppModel {
         let store = StoreManager()
         self.container = container
         self.store = store
-        self.sessions = SessionCoordinator(context: container.mainContext, store: store)
+        let sessions = SessionCoordinator(context: container.mainContext, store: store)
+        let storage = StorageCoordinator(context: container.mainContext)
+        self.sessions = sessions
+        self.storage = storage
         self.storedActiveDeviceID = UserDefaults.standard.string(forKey: SettingsKeys.activeDevice).flatMap(UUID.init(uuidString:))
         sessions.activeDeviceIDProvider = { [weak self] in self?.activeLink?.id }
         ble.onLinkCreated = { [weak self] link in self?.wire(link) }
         ble.onConnected = { [weak self] link in self?.didConnect(link) }
         ble.onDisconnected = { [weak self] link in self?.sessions.handleLinkChange(link) }
+        sessions.onSessionCompleted = { [weak storage] spoolIDs, date in storage?.markDried(spoolIDs, at: date) }
     }
 
     var context: ModelContext { container.mainContext }
@@ -67,6 +86,7 @@ final class AppModel {
         sessions.restoreInProgressSessions()
         let retention = (UserDefaults.standard.object(forKey: SettingsKeys.retentionDays) as? Int) ?? 90
         PersistenceController.pruneSamples(in: context, olderThanDays: retention)
+        storage.appBecameActive()
         await store.start()
     }
 

@@ -6,10 +6,14 @@ import SwiftUI
 /// The session only counts once the dryer acknowledges START_SESSION.
 struct StartDryingView: View {
     let link: DeviceLink
+    /// Spool chosen in the Storage tab ("Dry this spool"); preselects its material and the spool.
+    var preselectedSpoolID: UUID? = nil
 
     @Environment(AppModel.self) private var model
     @Environment(\.dismiss) private var dismiss
     @Query(sort: \CustomFilamentProfile.createdAt) private var customProfiles: [CustomFilamentProfile]
+    @Query(sort: \Spool.createdAt) private var spools: [Spool]
+    @State private var selectedSpools: Set<UUID> = []
     @AppStorage(SettingsKeys.temperatureUnit) private var unitRaw = TemperatureUnit.preferred().rawValue
 
     @State private var selectedProfileID: UUID? = FilamentProfile.builtIns.first?.id
@@ -82,6 +86,21 @@ struct StartDryingView: View {
                     Text("Limits come from your dryer: \(SpoolDryFormat.temperature(link.minTargetCelsius, unit: unit, fractionDigits: 0)) to \(SpoolDryFormat.temperature(link.maxTargetCelsius, unit: unit, fractionDigits: 0)). The fan always runs while heating.")
                 }
 
+                if !spools.isEmpty {
+                    Section {
+                        ForEach(spools) { spool in
+                            Toggle(isOn: Binding(get: { selectedSpools.contains(spool.id) },
+                                                 set: { on in if on { selectedSpools.insert(spool.id) } else { selectedSpools.remove(spool.id) } })) {
+                                Text(verbatim: spool.title)
+                            }
+                        }
+                    } header: {
+                        Text("Spools in the dryer")
+                    } footer: {
+                        Text("Selected spools are marked as dried in Storage when the dryer reports the session as completed.")
+                    }
+                }
+
                 if let errorMessage {
                     Section { Label(errorMessage, systemImage: "exclamationmark.triangle").foregroundStyle(Theme.danger) }
                 }
@@ -109,7 +128,14 @@ struct StartDryingView: View {
                 ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } }
             }
             .onChange(of: selectedProfileID, initial: true) { _, _ in applyProfile() }
+            .onAppear(perform: applyPreselectedSpool)
         }
+    }
+
+    private func applyPreselectedSpool() {
+        guard let id = preselectedSpoolID, let spool = spools.first(where: { $0.id == id }) else { return }
+        selectedSpools.insert(id)
+        if let p = FilamentProfile.builtIns.first(where: { $0.material == spool.material }) { selectedProfileID = p.id }
     }
 
     private func applyProfile() {
@@ -130,7 +156,7 @@ struct StartDryingView: View {
                               brand: p.brand, profileID: p.id, targetCelsius: targetCelsius, durationSeconds: durationSeconds,
                               humidityTargetPercent: humidityTarget, fanMode: fanMode)
         do {
-            try await model.sessions.start(plan: plan, on: link)
+            try await model.sessions.start(plan: plan, on: link, spoolIDs: Array(selectedSpools))
             dismiss()
         } catch SessionCoordinator.StartError.paywallRequired {
             dismiss()

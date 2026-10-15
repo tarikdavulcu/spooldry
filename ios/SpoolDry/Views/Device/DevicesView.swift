@@ -33,7 +33,8 @@ struct DevicesView: View {
                         }
                     }
                     Button {
-                        if model.canAddAnotherDevice { model.showDeviceSetup = true } else { model.showPaywall = true }
+                        let wantsSetup = model.canAddAnotherDevice
+                        model.presentFromRoot { if wantsSetup { model.showDeviceSetup = true } else { model.showPaywall = true } }
                     } label: {
                         Label("Add Dryer", systemImage: "plus")
                     }

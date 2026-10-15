@@ -1,6 +1,47 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "%@ is at %@ (limit %@). Check the desiccant and the lid seal.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ is at %@ (limit %@). Check the desiccant and the lid seal."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ liegt bei %2$@ (Grenze %3$@). Prüfe Trockenmittel und Deckeldichtung."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ est à %2$@ (limite %3$@). Vérifiez le dessiccant et le joint du couvercle."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ está en %2$@ (límite %3$@). Revisa el desecante y el cierre de la tapa."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏%1$@ عند %2$@ (الحد %3$@). افحص مادة التجفيف وإحكام الغطاء."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ は %2$@ です（上限 %3$@）。乾燥剤とフタの密閉を確認してください。"
+          }
+        }
+      }
+    },
     "%@ is dry. %@ is cooling down or finished.": {
       "extractionState": "manual",
       "localizations": {
@@ -329,6 +370,47 @@
         }
       }
     },
+    "%lld spools": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld spools"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Spulen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld bobines"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld bobinas"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld بكرات"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld 個のスプール"
+          }
+        }
+      }
+    },
     "--": {
       "extractionState": "manual",
       "localizations": {
@@ -452,6 +534,47 @@
         }
       }
     },
+    "24 hours": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "24 hours"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "24 Stunden"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "24 heures"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "24 horas"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "24 ساعة"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "24時間"
+          }
+        }
+      }
+    },
     "30 days": {
       "extractionState": "manual",
       "localizations": {
@@ -489,6 +612,47 @@
           "stringUnit": {
             "state": "translated",
             "value": "30日"
+          }
+        }
+      }
+    },
+    "7 days": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 days"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 Tage"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 jours"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 días"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 أيام"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7日間"
           }
         }
       }
@@ -616,6 +780,47 @@
         }
       }
     },
+    "Add Dry Box": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Dry Box"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trockenbox hinzufügen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter une boîte sèche"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir caja seca"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة صندوق تجفيف"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ドライボックスを追加"
+          }
+        }
+      }
+    },
     "Add Dryer": {
       "extractionState": "manual",
       "localizations": {
@@ -653,6 +858,88 @@
           "stringUnit": {
             "state": "translated",
             "value": "ドライヤーを追加"
+          }
+        }
+      }
+    },
+    "Add Spool": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Spool"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spule hinzufügen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter une bobine"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir bobina"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة بكرة"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スプールを追加"
+          }
+        }
+      }
+    },
+    "Add the spools you own to see which ones need drying before your next print.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add the spools you own to see which ones need drying before your next print."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Füge deine Spulen hinzu und sieh, welche vor dem nächsten Druck getrocknet werden sollten."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajoutez vos bobines pour voir lesquelles sécher avant la prochaine impression."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade tus bobinas para ver cuáles conviene secar antes de la próxima impresión."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضف البكرات التي تملكها لترى أيها يحتاج إلى التجفيف قبل الطباعة التالية."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "手持ちのスプールを追加すると、次の印刷前に乾燥が必要なものがわかります。"
           }
         }
       }
@@ -739,6 +1026,47 @@
         }
       }
     },
+    "Allow Bluetooth for SpoolDry in Settings to read your sensors.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Bluetooth for SpoolDry in Settings to read your sensors."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erlaube Bluetooth für SpoolDry in den Einstellungen, um deine Sensoren zu lesen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez le Bluetooth pour SpoolDry dans Réglages pour lire vos capteurs."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite Bluetooth para SpoolDry en Ajustes para leer tus sensores."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسمح بالبلوتوث لتطبيق SpoolDry في الإعدادات لقراءة الحساسات."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "センサーを読み取るには、設定でSpoolDryのBluetoothを許可してください。"
+          }
+        }
+      }
+    },
     "Always on": {
       "extractionState": "manual",
       "localizations": {
@@ -776,6 +1104,47 @@
           "stringUnit": {
             "state": "translated",
             "value": "常にオン"
+          }
+        }
+      }
+    },
+    "Assign spools to this box when you add or edit them.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assign spools to this box when you add or edit them."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordne Spulen dieser Box beim Hinzufügen oder Bearbeiten zu."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attribuez des bobines à cette boîte en les ajoutant ou en les modifiant."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asigna bobinas a esta caja al añadirlas o editarlas."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عيّن البكرات لهذا الصندوق عند إضافتها أو تعديلها."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スプールの追加・編集時にこのボックスを指定してください。"
           }
         }
       }
@@ -940,6 +1309,129 @@
           "stringUnit": {
             "state": "translated",
             "value": "BLEプロトコル"
+          }
+        }
+      }
+    },
+    "BTHome sensor": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "BTHome sensor"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "BTHome-Sensor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capteur BTHome"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sensor BTHome"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حساس BTHome"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "BTHomeセンサー"
+          }
+        }
+      }
+    },
+    "Battery %@%%": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Battery %@%%"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Batterie %@ %%"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Batterie %@ %%"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Batería %@ %%"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البطارية %@%%"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "電池 %@%%"
+          }
+        }
+      }
+    },
+    "Black": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Black"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schwarz"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noir"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Negro"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أسود"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ブラック"
           }
         }
       }
@@ -1309,6 +1801,88 @@
           "stringUnit": {
             "state": "translated",
             "value": "閉じる"
+          }
+        }
+      }
+    },
+    "Collecting data…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collecting data…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daten werden gesammelt…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collecte des données…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recopilando datos…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ جمع البيانات…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "データ収集中…"
+          }
+        }
+      }
+    },
+    "Color": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Color"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Farbe"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couleur"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Color"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اللون"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "色"
           }
         }
       }
@@ -2051,6 +2625,170 @@
         }
       }
     },
+    "Delete Dry Box": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete Dry Box"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trockenbox löschen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer la boîte sèche"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar caja seca"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف صندوق التجفيف"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ドライボックスを削除"
+          }
+        }
+      }
+    },
+    "Delete Spool": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete Spool"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spule löschen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer la bobine"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar bobina"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف البكرة"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スプールを削除"
+          }
+        }
+      }
+    },
+    "Delete this dry box? Its spools stay in your inventory.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete this dry box? Its spools stay in your inventory."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Trockenbox löschen? Ihre Spulen bleiben in deinem Bestand."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer cette boîte sèche ? Ses bobines restent dans votre inventaire."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Eliminar esta caja seca? Sus bobinas siguen en tu inventario."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف صندوق التجفيف هذا؟ تبقى بكراته في مخزونك."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このドライボックスを削除しますか？スプールは在庫に残ります。"
+          }
+        }
+      }
+    },
+    "Delete this spool?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete this spool?"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Spule löschen?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer cette bobine ?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Eliminar esta bobina?"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف هذه البكرة؟"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このスプールを削除しますか？"
+          }
+        }
+      }
+    },
     "Demo": {
       "extractionState": "manual",
       "localizations": {
@@ -2092,6 +2830,47 @@
         }
       }
     },
+    "Demo Dry Box": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demo Dry Box"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demo-Trockenbox"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boîte sèche de démo"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caja seca de demostración"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صندوق تجفيف تجريبي"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デモ用ドライボックス"
+          }
+        }
+      }
+    },
     "Demo Dryer": {
       "extractionState": "manual",
       "localizations": {
@@ -2129,6 +2908,47 @@
           "stringUnit": {
             "state": "translated",
             "value": "デモドライヤー"
+          }
+        }
+      }
+    },
+    "Demo Sensor": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demo Sensor"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demo-Sensor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capteur de démo"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sensor de demostración"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حساس تجريبي"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デモセンサー"
           }
         }
       }
@@ -2379,6 +3199,252 @@
         }
       }
     },
+    "Dried %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dried %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Getrocknet %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Séchée %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Secada %@"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جُففت %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "乾燥 %@"
+          }
+        }
+      }
+    },
+    "Dry": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dry"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trocken"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sec"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seca"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جاف"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "乾燥"
+          }
+        }
+      }
+    },
+    "Dry This Spool": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dry This Spool"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Spule trocknen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sécher cette bobine"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Secar esta bobina"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جفّف هذه البكرة"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このスプールを乾燥"
+          }
+        }
+      }
+    },
+    "Dry box": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dry box"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trockenbox"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boîte sèche"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caja seca"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صندوق التجفيف"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ドライボックス"
+          }
+        }
+      }
+    },
+    "Dry box too humid": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dry box too humid"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trockenbox zu feucht"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boîte sèche trop humide"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caja seca demasiado húmeda"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صندوق التجفيف رطب جدًا"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ドライボックスの湿度が高すぎます"
+          }
+        }
+      }
+    },
+    "Dry boxes": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dry boxes"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trockenboxen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boîtes sèches"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cajas secas"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صناديق التجفيف"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ドライボックス"
+          }
+        }
+      }
+    },
     "Dryer": {
       "extractionState": "manual",
       "localizations": {
@@ -2457,6 +3523,47 @@
           "stringUnit": {
             "state": "translated",
             "value": "ドライヤーの状態"
+          }
+        }
+      }
+    },
+    "Dryers": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dryers"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trockner"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sécheurs"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Secadores"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المجففات"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ドライヤー"
           }
         }
       }
@@ -2580,6 +3687,47 @@
           "stringUnit": {
             "state": "translated",
             "value": "乾燥完了"
+          }
+        }
+      }
+    },
+    "Drying date known": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drying date known"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trocknungsdatum bekannt"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date de séchage connue"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fecha de secado conocida"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تاريخ التجفيف معروف"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "乾燥日がわかる"
           }
         }
       }
@@ -2949,6 +4097,88 @@
           "stringUnit": {
             "state": "translated",
             "value": "プロファイルを編集"
+          }
+        }
+      }
+    },
+    "Edit Spool": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit Spool"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spule bearbeiten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifier la bobine"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar bobina"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل البكرة"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スプールを編集"
+          }
+        }
+      }
+    },
+    "Encrypted: turn off encryption in the sensor's app to use it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encrypted: turn off encryption in the sensor's app to use it."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verschlüsselt: Deaktiviere die Verschlüsselung in der App des Sensors, um ihn zu nutzen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chiffré : désactivez le chiffrement dans l'app du capteur pour l'utiliser."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cifrado: desactiva el cifrado en la app del sensor para usarlo."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مشفّر: أوقف التشفير في تطبيق الحساس لاستخدامه."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暗号化されています：使用するにはセンサーのアプリで暗号化をオフにしてください。"
           }
         }
       }
@@ -4347,6 +5577,47 @@
         }
       }
     },
+    "Humidity history": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Humidity history"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feuchteverlauf"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historique d'humidité"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historial de humedad"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجل الرطوبة"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "湿度の履歴"
+          }
+        }
+      }
+    },
     "Humidity target": {
       "extractionState": "manual",
       "localizations": {
@@ -4470,6 +5741,47 @@
         }
       }
     },
+    "Keep stored filament dry": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep stored filament dry"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gelagertes Filament trocken halten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gardez le filament stocké au sec"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantén seco el filamento almacenado"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حافظ على جفاف الخيوط المخزنة"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保管中のフィラメントを乾燥状態に"
+          }
+        }
+      }
+    },
     "Know When Your Filament Is Dry.": {
       "extractionState": "manual",
       "localizations": {
@@ -4548,6 +5860,47 @@
           "stringUnit": {
             "state": "translated",
             "value": "直近3時間"
+          }
+        }
+      }
+    },
+    "Last dried": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last dried"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zuletzt getrocknet"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dernier séchage"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Último secado"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "آخر تجفيف"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最終乾燥日"
           }
         }
       }
@@ -4634,6 +5987,47 @@
         }
       }
     },
+    "Last reading": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last reading"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Letzter Messwert"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dernière mesure"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Última lectura"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "آخر قراءة"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最終測定"
+          }
+        }
+      }
+    },
     "Last update %@ ago": {
       "extractionState": "manual",
       "localizations": {
@@ -4716,6 +6110,47 @@
         }
       }
     },
+    "Limit %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limit %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grenze %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limite %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Límite %@"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحد %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上限 %@"
+          }
+        }
+      }
+    },
     "Limits come from your dryer: %@ to %@. The fan always runs while heating.": {
       "extractionState": "manual",
       "localizations": {
@@ -4753,6 +6188,47 @@
           "stringUnit": {
             "state": "translated",
             "value": "上限と下限はドライヤーから取得：%@〜%@。加熱中は常にファンが回ります。"
+          }
+        }
+      }
+    },
+    "Listening for BTHome sensors…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listening for BTHome sensors…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suche nach BTHome-Sensoren…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recherche de capteurs BTHome…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscando sensores BTHome…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ البحث عن حساسات BTHome…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "BTHomeセンサーを検索中…"
           }
         }
       }
@@ -5081,6 +6557,47 @@
           "stringUnit": {
             "state": "translated",
             "value": "メーカーの参考情報"
+          }
+        }
+      }
+    },
+    "Mark as Dried Now": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mark as Dried Now"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jetzt als getrocknet markieren"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marquer comme séchée maintenant"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marcar como secada ahora"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وضع علامة تم التجفيف الآن"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今乾燥済みにする"
           }
         }
       }
@@ -5454,6 +6971,88 @@
         }
       }
     },
+    "Name, e.g. Nylon box": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name, e.g. Nylon box"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name, z. B. Nylon-Box"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom, p. ex. Boîte nylon"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre, p. ej. Caja de nailon"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاسم، مثل صندوق النايلون"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名前（例：ナイロンボックス）"
+          }
+        }
+      }
+    },
+    "Natural": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Natural"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Natur"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naturel"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Natural"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طبيعي"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ナチュラル"
+          }
+        }
+      }
+    },
     "Needs a high-temperature dryer": {
       "extractionState": "manual",
       "localizations": {
@@ -5577,6 +7176,47 @@
         }
       }
     },
+    "No dryer? Monitor your filament dry boxes with an off-the-shelf Bluetooth hygrometer in the Storage tab.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No dryer? Monitor your filament dry boxes with an off-the-shelf Bluetooth hygrometer in the Storage tab."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kein Trockner? Überwache deine Filament-Trockenboxen im Tab „Lager“ mit einem handelsüblichen Bluetooth-Hygrometer."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas de sécheur ? Surveillez vos boîtes sèches avec un hygromètre Bluetooth du commerce dans l'onglet Stockage."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Sin secador? Vigila tus cajas secas de filamento con un higrómetro Bluetooth comercial en la pestaña Almacén."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يوجد مجفف؟ راقب صناديق تخزين الخيوط بمقياس رطوبة بلوتوث تجاري من تبويب التخزين."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ドライヤーがなくても、市販のBluetooth湿度計で「保管」タブからドライボックスを監視できます。"
+          }
+        }
+      }
+    },
     "No drying sessions yet": {
       "extractionState": "manual",
       "localizations": {
@@ -5696,6 +7336,170 @@
           "stringUnit": {
             "state": "translated",
             "value": "このApple Accountでの購入は見つかりませんでした。"
+          }
+        }
+      }
+    },
+    "No recent data": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No recent data"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine aktuellen Daten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas de données récentes"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin datos recientes"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد بيانات حديثة"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最新データなし"
+          }
+        }
+      }
+    },
+    "No sensor": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No sensor"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kein Sensor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans capteur"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin sensor"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بلا حساس"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "センサーなし"
+          }
+        }
+      }
+    },
+    "No sensor (track spools only)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No sensor (track spools only)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kein Sensor (nur Spulen verwalten)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sans capteur (suivi des bobines seulement)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin sensor (solo seguimiento de bobinas)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بلا حساس (تتبع البكرات فقط)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "センサーなし（スプール管理のみ）"
+          }
+        }
+      }
+    },
+    "No sensor yet? Add the Demo Dry Box": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No sensor yet? Add the Demo Dry Box"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch kein Sensor? Demo-Trockenbox hinzufügen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas encore de capteur ? Ajouter la boîte de démo"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Aún sin sensor? Añade la caja de demostración"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يوجد حساس بعد؟ أضف صندوق التجفيف التجريبي"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "センサーがまだない場合はデモ用ドライボックスを追加"
           }
         }
       }
@@ -6024,6 +7828,47 @@
           "stringUnit": {
             "state": "translated",
             "value": "SpoolDryを開いてドライヤーを接続してください。"
+          }
+        }
+      }
+    },
+    "Open Storage": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Storage"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lager öffnen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir le stockage"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir almacén"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فتح التخزين"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保管を開く"
           }
         }
       }
@@ -6643,6 +8488,88 @@
         }
       }
     },
+    "Put a Bluetooth thermo-hygrometer that broadcasts in the open BTHome format (for example Shelly BLU H&T, or Xiaomi sensors with PVVX firmware) into your filament box. SpoolDry reads it directly, without pairing, account or cloud, and warns you when the box gets too humid.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Put a Bluetooth thermo-hygrometer that broadcasts in the open BTHome format (for example Shelly BLU H&T, or Xiaomi sensors with PVVX firmware) into your filament box. SpoolDry reads it directly, without pairing, account or cloud, and warns you when the box gets too humid."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lege ein Bluetooth-Thermo-Hygrometer, das im offenen BTHome-Format sendet (z. B. Shelly BLU H&T oder Xiaomi-Sensoren mit PVVX-Firmware), in deine Filamentbox. SpoolDry liest es direkt – ohne Kopplung, Konto oder Cloud – und warnt dich, wenn die Box zu feucht wird."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Placez dans votre boîte à filament un thermo-hygromètre Bluetooth qui émet au format ouvert BTHome (par exemple Shelly BLU H&T ou des capteurs Xiaomi avec le firmware PVVX). SpoolDry le lit directement, sans appairage, compte ni cloud, et vous avertit quand la boîte devient trop humide."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coloca en tu caja de filamento un termohigrómetro Bluetooth que emita en el formato abierto BTHome (por ejemplo Shelly BLU H&T o sensores Xiaomi con firmware PVVX). SpoolDry lo lee directamente, sin emparejar, sin cuenta y sin nube, y te avisa cuando la caja está demasiado húmeda."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ضع في صندوق الخيوط مقياس حرارة ورطوبة بلوتوث يبث بصيغة BTHome المفتوحة (مثل Shelly BLU H&T أو حساسات Xiaomi ببرنامج PVVX). يقرؤه SpoolDry مباشرة دون اقتران أو حساب أو سحابة، وينبهك عندما تزداد رطوبة الصندوق."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オープンなBTHome形式で送信するBluetooth温湿度計（例：Shelly BLU H&T、PVVXファームウェアのXiaomiセンサー）をフィラメントボックスに入れてください。SpoolDryはペアリング・アカウント・クラウドなしで直接読み取り、湿度が高くなると知らせます。"
+          }
+        }
+      }
+    },
+    "Range": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Range"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeitraum"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Période"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Periodo"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المدة"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "期間"
+          }
+        }
+      }
+    },
     "Ready": {
       "extractionState": "manual",
       "localizations": {
@@ -6971,6 +8898,47 @@
         }
       }
     },
+    "Room air": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Room air"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raumluft"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Air ambiant"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aire ambiente"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هواء الغرفة"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "室内"
+          }
+        }
+      }
+    },
     "Safety": {
       "extractionState": "manual",
       "localizations": {
@@ -7295,6 +9263,170 @@
           "stringUnit": {
             "state": "translated",
             "value": "近くのドライヤーを検索中"
+          }
+        }
+      }
+    },
+    "Selected spools are marked as dried in Storage when the dryer reports the session as completed.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selected spools are marked as dried in Storage when the dryer reports the session as completed."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausgewählte Spulen werden im Lager als getrocknet markiert, wenn der Trockner die Trocknung als abgeschlossen meldet."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les bobines sélectionnées sont marquées comme séchées dans Stockage quand le sécheur signale la fin du séchage."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las bobinas seleccionadas se marcan como secadas en Almacén cuando el secador informa que la sesión terminó."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تُعلَّم البكرات المحددة كمجففة في التخزين عندما يُبلغ المجفف باكتمال الجلسة."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選択したスプールは、ドライヤーがセッション完了を報告すると「保管」で乾燥済みになります。"
+          }
+        }
+      }
+    },
+    "Sensor": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sensor"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sensor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capteur"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sensor"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحساس"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "センサー"
+          }
+        }
+      }
+    },
+    "Sensor battery": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sensor battery"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sensorbatterie"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Batterie du capteur"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Batería del sensor"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بطارية الحساس"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "センサー電池"
+          }
+        }
+      }
+    },
+    "Sensor in this box": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sensor in this box"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sensor in dieser Box"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capteur dans cette boîte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sensor en esta caja"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحساس في هذا الصندوق"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このボックスのセンサー"
           }
         }
       }
@@ -7668,6 +9800,47 @@
         }
       }
     },
+    "Signal %@ dBm": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signal %@ dBm"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signal %@ dBm"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signal %@ dBm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Señal %@ dBm"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإشارة %@ dBm"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "信号 %@ dBm"
+          }
+        }
+      }
+    },
     "Signal: excellent": {
       "extractionState": "manual",
       "localizations": {
@@ -7951,6 +10124,47 @@
           "stringUnit": {
             "state": "translated",
             "value": "出典"
+          }
+        }
+      }
+    },
+    "Spool condition is an estimate from each material's typical moisture sensitivity and the humidity your sensors reported since the spool was last dried. Dry before critical prints.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spool condition is an estimate from each material's typical moisture sensitivity and the humidity your sensors reported since the spool was last dried. Dry before critical prints."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Spulenzustand ist eine Schätzung aus der typischen Feuchteempfindlichkeit des Materials und der Feuchte, die deine Sensoren seit der letzten Trocknung gemeldet haben. Vor wichtigen Drucken trocknen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'état de la bobine est une estimation basée sur la sensibilité typique du matériau et l'humidité relevée par vos capteurs depuis le dernier séchage. Séchez avant les impressions critiques."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El estado de la bobina es una estimación según la sensibilidad típica del material y la humedad que tus sensores registraron desde el último secado. Seca antes de impresiones críticas."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حالة البكرة تقدير يعتمد على حساسية المادة النموذجية للرطوبة والرطوبة التي سجلتها الحساسات منذ آخر تجفيف. جفّف قبل الطباعات المهمة."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スプールの状態は、素材の一般的な吸湿性と前回の乾燥以降にセンサーが記録した湿度からの推定です。重要な印刷の前には乾燥してください。"
           }
         }
       }
@@ -8242,6 +10456,129 @@
         }
       }
     },
+    "Spools": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spools"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spulen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bobines"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bobinas"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البكرات"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スプール"
+          }
+        }
+      }
+    },
+    "Spools in the dryer": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spools in the dryer"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spulen im Trockner"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bobines dans le sécheur"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bobinas en el secador"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البكرات في المجفف"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ドライヤー内のスプール"
+          }
+        }
+      }
+    },
+    "Spools in this box": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spools in this box"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spulen in dieser Box"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bobines dans cette boîte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bobinas en esta caja"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البكرات في هذا الصندوق"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このボックスのスプール"
+          }
+        }
+      }
+    },
     "Start Drying": {
       "extractionState": "manual",
       "localizations": {
@@ -8488,6 +10825,88 @@
         }
       }
     },
+    "Storage": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Storage"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lager"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stockage"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Almacén"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التخزين"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保管"
+          }
+        }
+      }
+    },
+    "Stored in": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stored in"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gelagert in"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stockée dans"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guardada en"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مخزنة في"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保管場所"
+          }
+        }
+      }
+    },
     "Summarised from the linked official pages. Last checked %@.": {
       "extractionState": "manual",
       "localizations": {
@@ -8566,6 +10985,47 @@
           "stringUnit": {
             "state": "translated",
             "value": "サポート"
+          }
+        }
+      }
+    },
+    "Supported: Bluetooth hygrometers that broadcast unencrypted BTHome v2, such as Shelly BLU H&T or Xiaomi/Telink sensors running the open PVVX firmware in BTHome mode. Hold the sensor close to your iPhone to find it; the strongest signal is listed first.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supported: Bluetooth hygrometers that broadcast unencrypted BTHome v2, such as Shelly BLU H&T or Xiaomi/Telink sensors running the open PVVX firmware in BTHome mode. Hold the sensor close to your iPhone to find it; the strongest signal is listed first."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unterstützt: Bluetooth-Hygrometer, die unverschlüsseltes BTHome v2 senden, z. B. Shelly BLU H&T oder Xiaomi-/Telink-Sensoren mit der offenen PVVX-Firmware im BTHome-Modus. Halte den Sensor nah ans iPhone; das stärkste Signal steht oben."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compatibles : hygromètres Bluetooth émettant en BTHome v2 non chiffré, comme Shelly BLU H&T ou les capteurs Xiaomi/Telink avec le firmware ouvert PVVX en mode BTHome. Approchez le capteur de l'iPhone ; le signal le plus fort apparaît en premier."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compatibles: higrómetros Bluetooth que emiten BTHome v2 sin cifrar, como Shelly BLU H&T o sensores Xiaomi/Telink con el firmware abierto PVVX en modo BTHome. Acerca el sensor al iPhone; la señal más fuerte aparece primero."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المدعوم: مقاييس رطوبة بلوتوث تبث BTHome v2 غير مشفر، مثل Shelly BLU H&T أو حساسات Xiaomi/Telink ببرنامج PVVX المفتوح في وضع BTHome. قرّب الحساس من الـ iPhone؛ تظهر الإشارة الأقوى أولًا."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "対応：暗号化なしのBTHome v2を送信するBluetooth湿度計（Shelly BLU H&T、BTHomeモードのオープンなPVVXファームウェアを搭載したXiaomi/Telinkセンサーなど）。センサーをiPhoneに近づけてください。信号が最も強いものが先頭に表示されます。"
           }
         }
       }
@@ -9144,6 +11604,47 @@
         }
       }
     },
+    "The dashed line is this box's warning limit. SpoolDry records readings while the app is open; gaps mean no reading was received.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The dashed line is this box's warning limit. SpoolDry records readings while the app is open; gaps mean no reading was received."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die gestrichelte Linie ist die Warngrenze dieser Box. SpoolDry speichert Messwerte, während die App geöffnet ist; Lücken bedeuten, dass kein Wert empfangen wurde."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La ligne pointillée est la limite d'alerte de cette boîte. SpoolDry enregistre les mesures quand l'app est ouverte ; les trous signifient qu'aucune mesure n'a été reçue."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La línea discontinua es el límite de aviso de esta caja. SpoolDry registra lecturas mientras la app está abierta; los huecos indican que no se recibió ninguna lectura."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الخط المتقطع هو حد التنبيه لهذا الصندوق. يسجل SpoolDry القراءات أثناء فتح التطبيق؛ الفجوات تعني عدم استلام أي قراءة."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "破線はこのボックスの警告上限です。SpoolDryはアプリを開いている間に測定値を記録します。空白は測定値を受信しなかった期間です。"
+          }
+        }
+      }
+    },
     "The dryer did not confirm the command. Check that it is powered and in range.": {
       "extractionState": "manual",
       "localizations": {
@@ -9677,6 +12178,47 @@
         }
       }
     },
+    "Too humid": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Too humid"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zu feucht"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trop humide"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demasiado húmeda"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رطب جدًا"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "湿度過多"
+          }
+        }
+      }
+    },
     "Track Temperature & Humidity.": {
       "extractionState": "manual",
       "localizations": {
@@ -9714,6 +12256,88 @@
           "stringUnit": {
             "state": "translated",
             "value": "温度と湿度を記録。"
+          }
+        }
+      }
+    },
+    "Track remaining weight": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Track remaining weight"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restgewicht erfassen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suivre le poids restant"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registrar el peso restante"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتبع الوزن المتبقي"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "残量を記録"
+          }
+        }
+      }
+    },
+    "Try the Demo Dry Box": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try the Demo Dry Box"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demo-Trockenbox ausprobieren"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Essayer la boîte sèche de démo"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probar la caja seca de demostración"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جرّب صندوق التجفيف التجريبي"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デモ用ドライボックスを試す"
           }
         }
       }
@@ -10005,6 +12629,47 @@
         }
       }
     },
+    "Unlimited monitored dry boxes": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlimited monitored dry boxes"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unbegrenzt viele überwachte Trockenboxen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boîtes sèches surveillées illimitées"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cajas secas monitorizadas ilimitadas"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صناديق تجفيف مراقبة بلا حدود"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "監視するドライボックス無制限"
+          }
+        }
+      }
+    },
     "Unlock Lifetime": {
       "extractionState": "manual",
       "localizations": {
@@ -10247,6 +12912,47 @@
           "stringUnit": {
             "state": "translated",
             "value": "表示"
+          }
+        }
+      }
+    },
+    "Warn above": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warn above"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warnen über"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alerter au-dessus de"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avisar por encima de"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تنبيه فوق"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "警告する湿度"
           }
         }
       }
@@ -12748,6 +15454,170 @@
           "stringUnit": {
             "state": "translated",
             "value": "吸湿性：非常に高い"
+          }
+        }
+      }
+    },
+    "spool.condition.dry": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dry"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trocken"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sèche"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seca"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جافة"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "乾燥"
+          }
+        }
+      }
+    },
+    "spool.condition.needsDrying": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dry first"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erst trocknen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À sécher"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Secar antes"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جفّف أولًا"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "要乾燥"
+          }
+        }
+      }
+    },
+    "spool.condition.unknown": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not dried yet"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch nicht getrocknet"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas encore séchée"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún sin secar"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم تُجفف بعد"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未乾燥"
+          }
+        }
+      }
+    },
+    "spool.condition.watch": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Watch"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beobachten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À surveiller"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vigilar"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "راقب"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "注意"
           }
         }
       }

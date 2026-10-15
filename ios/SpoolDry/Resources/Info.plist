@@ -47,7 +47,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>SpoolDry uses Bluetooth to connect directly to your SpoolDry filament dryer to read temperature and humidity and to start or stop drying. No data leaves your iPhone.</string>
+	<string>SpoolDry uses Bluetooth to connect directly to your SpoolDry filament dryer and to read the Bluetooth hygrometers in your filament dry boxes. No data leaves your iPhone.</string>
 	<key>NSSupportsLiveActivities</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>

@@ -38,6 +38,7 @@ final class SessionCoordinator {
         var baseSamples: [SessionSample]
         var lastPersistedSampleCount: Int
         var lastState: DeviceState
+        var spoolIDs: [UUID] = []
     }
 
     let store: StoreManager
@@ -53,6 +54,8 @@ final class SessionCoordinator {
     @ObservationIgnored private var lastWidgetReload = Date.distantPast
     @ObservationIgnored private var lastWidgetState: DeviceState?
     @ObservationIgnored var activeDeviceIDProvider: () -> UUID? = { nil }
+    /// Called with the Storage spools that were in the dryer when a session completes successfully.
+    @ObservationIgnored var onSessionCompleted: ([UUID], Date) -> Void = { _, _ in }
 
     init(context: ModelContext, store: StoreManager, usageStore: UsageCounterStore = KeychainUsageCounterStore()) {
         let ledger = FreeSessionLedger(store: usageStore)
@@ -89,7 +92,7 @@ final class SessionCoordinator {
 
     // MARK: Commands
 
-    func start(plan: DryingPlan, on link: DeviceLink) async throws {
+    func start(plan: DryingPlan, on link: DeviceLink, spoolIDs: [UUID] = []) async throws {
         guard link.isReady else { throw StartError.notReady }
         if case .paywall = decision(for: link) { throw StartError.paywallRequired }
         // Ask for notification permission without blocking the start command on the system alert.
@@ -107,12 +110,14 @@ final class SessionCoordinator {
 
         let record = DryingSessionRecord(plan: plan, deviceSessionId: ack.sessionId, deviceID: link.id,
                                          deviceName: link.name, isDemo: link.isDemo, startedAt: now)
+        record.spoolIDs = spoolIDs
         context.insert(record)
         try? context.save()
 
         let tracker = SessionTracker(deviceSessionId: ack.sessionId, startedAt: now, durationSeconds: plan.durationSeconds)
         active[link.id] = ActiveSession(recordID: record.id, tracker: tracker, plan: plan, deviceName: link.name,
-                                        baseSamples: [], lastPersistedSampleCount: 0, lastState: .preheating)
+                                        baseSamples: [], lastPersistedSampleCount: 0, lastState: .preheating,
+                                        spoolIDs: spoolIDs)
 
         if liveActivitiesEnabled {
             let attributes = SpoolDryActivityAttributes(filamentLabel: plan.compactLabel, materialRaw: plan.material.rawValue,
@@ -179,6 +184,7 @@ final class SessionCoordinator {
                 notifications.notifyOutcome(summary.outcome, filament: session.plan.compactLabel,
                                             deviceName: session.deviceName, error: summary.errorCode)
             }
+            if summary.outcome == .completed { onSessionCompleted(session.spoolIDs, summary.endedAt ?? now) }
             active[link.id] = nil
         } else {
             liveActivities.update(deviceID: link.id, sessionId: summary.deviceSessionId,
@@ -221,7 +227,7 @@ final class SessionCoordinator {
             }
             active[r.devicePeripheralID] = ActiveSession(recordID: r.id, tracker: tracker, plan: plan, deviceName: r.deviceName,
                                                          baseSamples: r.samples, lastPersistedSampleCount: 0,
-                                                         lastState: .disconnected)
+                                                         lastState: .disconnected, spoolIDs: r.spoolIDs)
         }
         try? context.save()
     }

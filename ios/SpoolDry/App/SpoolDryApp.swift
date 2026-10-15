@@ -4,6 +4,7 @@ import SwiftUI
 @main
 struct SpoolDryApp: App {
     @State private var model = AppModel()
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some Scene {
         WindowGroup {
@@ -14,6 +15,10 @@ struct SpoolDryApp: App {
                 .onOpenURL { url in
                     // spooldry://dashboard (widgets, Live Activities)
                     if url.scheme == SharedConstants.urlScheme { model.selectedTab = .dashboard }
+                }
+                .onChange(of: scenePhase) { _, phase in
+                    if phase == .active { model.storage.appBecameActive() }
+                    if phase == .background { model.storage.scanner.stop() }
                 }
         }
     }

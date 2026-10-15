@@ -12,6 +12,7 @@ struct DashboardView: View {
     private var unit: TemperatureUnit { TemperatureUnit(rawValue: unitRaw) ?? .celsius }
 
     var body: some View {
+        @Bindable var model = model
         NavigationStack {
             ScrollView {
                 VStack(spacing: 16) {
@@ -37,12 +38,24 @@ struct DashboardView: View {
             .spoolDryBackground()
             .navigationTitle("SpoolDry")
             .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button { model.showDevices = true } label: { Label("Dryers", systemImage: "cpu") }
+                }
                 if model.sortedLinks.count > 1 {
                     ToolbarItem(placement: .topBarTrailing) { devicePicker }
                 }
             }
-            .sheet(isPresented: $showStart) {
-                if let link = model.activeLink { StartDryingView(link: link) }
+            .sheet(isPresented: $showStart, onDismiss: { model.pendingSpoolToDry = nil }) {
+                if let link = model.activeLink { StartDryingView(link: link, preselectedSpoolID: model.pendingSpoolToDry) }
+            }
+            .sheet(isPresented: $model.showDevices) { DevicesView() }
+            .onChange(of: model.pendingSpoolToDry, initial: true) { _, id in
+                guard id != nil else { return }
+                if let link = model.activeLink, link.isReady {
+                    startTapped(link)
+                } else {
+                    model.pendingSpoolToDry = nil
+                }
             }
             .alert("Something went wrong", isPresented: Binding(get: { actionError != nil }, set: { if !$0 { actionError = nil } })) {
                 Button("OK", role: .cancel) {}
@@ -116,9 +129,9 @@ struct DashboardView: View {
 
     private var quickLinks: some View {
         HStack(spacing: 12) {
+            quickLink("Storage", "archivebox", .storage)
             quickLink("Profiles", "list.bullet.rectangle", .profiles)
             quickLink("History", "clock.arrow.circlepath", .history)
-            quickLink("Device", "cpu", .device)
             quickLink("Settings", "gearshape", .settings)
         }
     }
@@ -297,6 +310,13 @@ private struct EmptyDeviceCard: View {
                 }
                 .buttonStyle(PrimaryButtonStyle())
                 Button("Try the Demo Dryer") { model.addDemoDevice() }
+                    .buttonStyle(.bordered)
+                Divider().padding(.vertical, 4)
+                Label("No dryer? Monitor your filament dry boxes with an off-the-shelf Bluetooth hygrometer in the Storage tab.",
+                      systemImage: "archivebox")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+                Button("Open Storage") { model.selectedTab = .storage }
                     .buttonStyle(.bordered)
             }
         }

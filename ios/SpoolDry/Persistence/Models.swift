@@ -63,6 +63,8 @@ final class DryingSessionRecord {
     var averageTemperature: Double?
     var maxTemperature: Double?
     var samplesData: Data?
+    /// Spools from the Storage tab that were in the dryer; marked as dried when the session completes.
+    var spoolIDsData: Data?
 
     init(plan: DryingPlan, deviceSessionId: UInt32, deviceID: UUID, deviceName: String, isDemo: Bool, startedAt: Date) {
         self.id = UUID()
@@ -91,6 +93,10 @@ final class DryingSessionRecord {
         return (try? JSONDecoder().decode([SessionSample].self, from: samplesData)) ?? []
     }
     var displayName: String { filamentName.isEmpty ? material.shortName : filamentName }
+    var spoolIDs: [UUID] {
+        get { spoolIDsData.flatMap { try? JSONDecoder().decode([UUID].self, from: $0) } ?? [] }
+        set { spoolIDsData = newValue.isEmpty ? nil : try? JSONEncoder().encode(newValue) }
+    }
 
     func apply(_ s: SessionSummary) {
         dryingStartedAt = s.dryingStartedAt
@@ -163,7 +169,7 @@ final class CustomFilamentProfile {
 }
 
 enum PersistenceController {
-    static let schema = Schema([SavedDevice.self, DryingSessionRecord.self, CustomFilamentProfile.self])
+    static let schema = Schema([SavedDevice.self, DryingSessionRecord.self, CustomFilamentProfile.self, DryBox.self, Spool.self])
 
     static func makeContainer(inMemory: Bool = false) -> ModelContainer {
         let config = ModelConfiguration(schema: schema, isStoredInMemoryOnly: inMemory, cloudKitDatabase: .none)
